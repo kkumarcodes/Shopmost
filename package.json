@@ -1,9 +1,9 @@
 {
-  "name": "maxstore",
+  "name": "Shopmost",
   "version": "0.33.0",
-  "description": "maxstore is React and Node.js based eCommerce platform. https://maxstore.com",
+  "description": "Shopmost is React and Node.js based eCommerce platform. https://Shopmost.com",
   "keywords": [
-    "maxstore",
+    "Shopmost",
     "ecommerce",
     "shopping cart",
     "shop",

@@ -1,6 +1,6 @@
 {
-  "name": "maxstore",
-  "short_name": "maxstore",
+  "name": "Shopmost",
+  "short_name": "Shopmost",
   "start_url": "/admin",
   "display": "standalone",
   "background_color": "#F9F9F9",

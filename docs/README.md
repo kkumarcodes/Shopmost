@@ -4,11 +4,11 @@
 * Getting Started
   - [with GitHub](./getting-started.md)
   - [with Docker](./getting-started-docker.md)
-* [How to deploy a maxstore on Ubuntu 16.04](./how-to-deploy-a-maxstore-on-ubuntu-16-04.md)
+* [How to deploy a Shopmost on Ubuntu 16.04](./how-to-deploy-a-Shopmost-on-ubuntu-16-04.md)
 * [Application Structure](./structure.md)
 * [Initialize MongoDB](./initialize-mongodb.md)
 * [API Reference](./api)
-* [API Client](https://github.com/smartmaxdev/maxstore/client)
+* [API Client](https://github.com/alperendev98/Shopmost/client)
 * Theme customization
 * Localization
 * Payment Gateway

@@ -5,19 +5,19 @@
   "cartThumbnailWidth": 100,
   "footer_contacts": [
     {
-      "text": "The campina, Garcia street"
+      "text": ""
     },
     {
-      "text": "Caracas, Capital District 1050"
+      "text": ""
     },
     {
-      "text": "Venezuela"
+      "text": "Turkey"
     },
     {
-      "text": "smartmaxdev@gmail.com"
+      "text": "alperenaksoydev@gmail.com"
     }
   ],
-  "footer_about": "MaxStore - React and Node.js based eCommerce platform. Allows creating a Progressive Web Apps.",
+  "footer_about": "Shopmost - React and Node.js based eCommerce platform. Allows creating a Progressive Web Apps.",
   "footer_menu_2_title": "Customer service",
   "footer_menu_1_title": "Company",
   "footer_social": [

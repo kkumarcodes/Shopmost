@@ -347,7 +347,7 @@
   "multipleDeleteTitle": "Are you sure you want to delete the {count} selected items?",
   "multipleDeleteDescription": "{count} items will be deleted immediately. You can't undo this action.",
   "webhooks": "Webhooks",
-  "webhooksAbout": "Webhooks allow external services to be notified when certain events happen. When the specified events happen, maxstore will send a POST request to each of the URLs you provide.",
+  "webhooksAbout": "Webhooks allow external services to be notified when certain events happen. When the specified events happen, Shopmost will send a POST request to each of the URLs you provide.",
   "webhookEdit": "Edit webhook",
   "webhookAdd": "Add webhook",
   "webhookEvents": "Events",

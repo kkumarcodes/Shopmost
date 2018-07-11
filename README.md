@@ -17,8 +17,8 @@ Single-Page Application with React server-side rendering. [Demo store](http://17
 ## Installation
 
 - [with GitHub](https://github.com/alperendev98/Shopmost/blob/master/docs/getting-started.md)
-- [with Docker](https://github.comalperendev98/Shopmost/blob/master/docs/getting-started-docker.md)
-- [How to deploy a maxstore on Ubuntu 16.04](https://github.com/alperendev98/Shopmost/blob/master/docs/how-to-deploy-a-Shopmost-on-ubuntu-16-04.md)
+- [with Docker](https://github.com/alperendev98/Shopmost/blob/master/docs/getting-started-docker.md)
+- [How to deploy a Shopmost on Ubuntu 16.04](https://github.com/alperendev98/Shopmost/blob/master/docs/how-to-deploy-a-Shopmost-on-ubuntu-16-04.md)
 
 ### Requirements
 * Node.js >= 8

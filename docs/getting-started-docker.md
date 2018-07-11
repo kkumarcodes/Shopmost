@@ -5,14 +5,14 @@
 
 ## Docker
 
-We'll use `maxstore/maxstore` image. [About image](https://github.com/smartmaxdev/docker-maxstore).
+We'll use `Shopmost/Shopmost` image. [About image](https://github.com/alperendev98/docker-Shopmost).
 
 1. Run MongoDB
 ```shell
 docker run --name store-db -v /var/www/store-db:/data/db -d mongo:latest
 ```
 
-2. Run maxstore
+2. Run Shopmost
 ```shell
 docker run -d \
 --name store \
@@ -23,8 +23,8 @@ docker run -d \
 -e DB_NAME=shop \
 -e DB_USER=user \
 -e DB_PASS=password \
--v /var/www/store:/var/www/maxstore \
-maxstore/maxstore:latest
+-v /var/www/store:/var/www/Shopmost \
+Shopmost/Shopmost:latest
 ```
 
 Open http://localhost to see your store.  
@@ -40,7 +40,7 @@ version: '3'
 
 services:
   app:
-    image: maxstore/maxstore
+    image: Shopmost/Shopmost
     environment:
       - DB_HOST=db
       - DB_PORT=27017
@@ -50,7 +50,7 @@ services:
     ports:
       - 4000:80
     volumes:
-      - /var/www/store:/var/www/maxstore
+      - /var/www/store:/var/www/Shopmost
     depends_on:
       - db
     restart: always
@@ -64,5 +64,5 @@ services:
     restart: always
 ```
 
-`/var/www/store` - folder with maxstore  
+`/var/www/store` - folder with Shopmost  
 `/var/www/store-db` - folder with MongoDB data
