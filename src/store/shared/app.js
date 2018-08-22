@@ -14,8 +14,10 @@ import CheckoutSuccessContainer from './containers/checkoutSuccess'
 import NotFoundContainer from './containers/notfound'
 import SearchContainer from './containers/search'
 
-import {setCurrentPage} from './actions'
-import {PAGE, PRODUCT_CATEGORY, PRODUCT, RESERVED, SEARCH} from './pageTypes'
+import { setCurrentPage } from './actions'
+import { PAGE, PRODUCT_CATEGORY, PRODUCT, RESERVED, SEARCH } from './pageTypes'
+
+// Crowdbotics Crowdbotics Crowdbotics
 
 class SwitchContainers extends React.Component {
   constructor(props) {
@@ -25,12 +27,12 @@ class SwitchContainers extends React.Component {
   componentWillReceiveProps(nextProps) {
     this.props.setCurrentPage(nextProps.location);
 
-    if(nextProps.location && this.props.location){
+    if (nextProps.location && this.props.location) {
       const pathnameChanged = nextProps.location.pathname !== this.props.location.pathname;
       const queryChanged = nextProps.location.search !== this.props.location.search;
       const isSearchPage = nextProps.location.pathname === '/search';
 
-      if(pathnameChanged || (queryChanged && isSearchPage)){
+      if (pathnameChanged || (queryChanged && isSearchPage)) {
         animateScroll.scrollToTop({
           duration: 500,
           delay: 100,
@@ -44,7 +46,7 @@ class SwitchContainers extends React.Component {
     const { history, location, currentPage } = this.props;
     const locationPathname = location && location.pathname ? location.pathname : '/';
 
-    switch(currentPage.type){
+    switch (currentPage.type) {
       case PRODUCT:
         return <ProductContainer />;
       case PRODUCT_CATEGORY:
@@ -52,11 +54,11 @@ class SwitchContainers extends React.Component {
       case SEARCH:
         return <SearchContainer />;
       case PAGE:
-        if(locationPathname === '/'){
+        if (locationPathname === '/') {
           return <IndexContainer />;
-        } else if(locationPathname === '/checkout'){
+        } else if (locationPathname === '/checkout') {
           return <CheckoutContainer />;
-        } if(locationPathname === '/checkout-success'){
+        } if (locationPathname === '/checkout-success') {
           return <CheckoutSuccessContainer />;
         } else {
           return <PageContainer />;
@@ -85,7 +87,7 @@ const SwitchContainersConnected = connect(mapStateToProps, mapDispatchToProps)(S
 
 const App = () => (
   <SharedContainer>
-    <Route component={SwitchContainersConnected}/>
+    <Route component={SwitchContainersConnected} />
   </SharedContainer>
 )
 
