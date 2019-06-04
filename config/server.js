@@ -1,28 +1,28 @@
 // config used by server side only
 
-const dbHost = process.env.DB_HOST || 'ds263460.mlab.com';
-const dbPort = process.env.DB_PORT || 63460;
-const dbName = process.env.DB_NAME || 'maxstoredb'
-const dbUser = process.env.DB_USER || 'smartmaxdev';
-const dbPass = process.env.DB_PASS || 'maxstore1';
+const dbHost = process.env.DB_HOST || 'localhost';
+const dbPort = process.env.DB_PORT || 27017;
+const dbName = process.env.DB_NAME || 'shopmostdb'
+const dbUser = process.env.DB_USER || 'mongoadmin';
+const dbPass = process.env.DB_PASS || 'mongoadmin';
 const dbCred = dbUser.length > 0 || dbPass.length > 0 ? `${dbUser}:${dbPass}@` : '';
 const dbUrl = `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
 
 module.exports = {
   // used by Store (server side)
-  apiBaseUrl: `http://176.104.107.227/api/v1`,
+  apiBaseUrl: `http://localhost:3000/api/v1`,
 
   // used by Store (server and client side)
-  ajaxBaseUrl: `http://176.104.107.227/ajax`,
+  ajaxBaseUrl: `http://localhost:3000/ajax`,
 
   // Access-Control-Allow-Origin
-  storeBaseUrl: `http://176.104.107.227`,
+  storeBaseUrl: `http://localhost:3000`,
 
   // used by API
   adminLoginUrl: '/admin/login',
 
-  apiListenPort: 3007,
-  storeListenPort: 3009,
+  apiListenPort: 3000,
+  storeListenPort: 3001,
 
   // used by API
   mongodbServerUrl: dbUrl,

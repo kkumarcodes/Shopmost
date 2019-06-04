@@ -2,7 +2,7 @@
 module.exports = {
   // dashboard UI language
   language: 'en',
-  apiBaseUrl: 'http://176.104.107.227/api/v1',
-  apiWebSocketUrl: 'ws://176.104.107.227',
+  apiBaseUrl: 'http://localhost:3000/api/v1',
+  apiWebSocketUrl: 'ws://localhost:3000',
   developerMode: true
 }
