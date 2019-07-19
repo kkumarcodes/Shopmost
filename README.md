@@ -11,14 +11,11 @@ Built with:
 * WebPack 4
 * MongoDB
 
-## Store
-Single-Page Application with React server-side rendering. [Demo store](http://176.104.107.227/)
-
 ## Installation
 
-- [with GitHub](https://github.com/alperendev98/Shopmost/blob/master/docs/getting-started.md)
-- [with Docker](https://github.com/alperendev98/Shopmost/blob/master/docs/getting-started-docker.md)
-- [How to deploy a Shopmost on Ubuntu 16.04](https://github.com/alperendev98/Shopmost/blob/master/docs/how-to-deploy-a-Shopmost-on-ubuntu-16-04.md)
+- [with GitHub](https://github.com/denisp107/Shopmost/blob/master/docs/getting-started.md)
+- [with Docker](https://github.com/denisp107/Shopmost/blob/master/docs/getting-started-docker.md)
+- [How to deploy a Shopmost on Ubuntu 16.04](https://github.com/denisp107/Shopmost/blob/master/docs/how-to-deploy-a-Shopmost-on-ubuntu-16-04.md)
 
 ### Requirements
 * Node.js >= 8
@@ -27,7 +24,7 @@ Single-Page Application with React server-side rendering. [Demo store](http://17
 
 ## Documentation
 
-[Documentation](https://github.com/alperendev98/Shopmost/tree/master/docs)
+[Documentation](https://github.com/denisp107/Shopmost/tree/master/docs)
 
 
 ## Application Structure
