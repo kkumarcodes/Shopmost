@@ -24,7 +24,7 @@ Built with:
 
 ## Documentation
 
-[Documentation](https://github.com/denisp107/Shopmost/tree/master/docs)
+[Documentation](https://github.com/valentindev89/Shopmost/tree/master/docs)
 
 
 ## Application Structure
