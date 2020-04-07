@@ -1,6 +1,6 @@
 {
   "name": "Shopmost",
-  "version": "0.33.0",
+  "version": "0.35.0",
   "description": "Shopmost is React and Node.js based eCommerce platform. https://Shopmost.com",
   "keywords": [
     "Shopmost",
@@ -10,26 +10,26 @@
     "cms"
   ],
   "homepage": "https://Shopmost.com",
-  "bugs": "https://github.com/alperendev98/Shopmost/issues",
+  "bugs": "https://github.com/valentindev89/Shopmost/issues",
   "license": "MIT",
   "author": {
-    "name": "Alperen Aksoy <alperenaksoydev@gmail.com>",
-    "url": "https://github.com/alperendev98"
+    "name": "Valentin Yushkevich <valentindev89@gmail.com>",
+    "url": "https://github.com/valentindev89"
   },
   "contributors": [
     {
-      "name": "Alperen Aksoy <alperenaksoydev@gmail.com>",
-      "url": "https://github.com/alperendev98"
+      "name": "Valentin Yushkevich <valentindev89@gmail.com>",
+      "url": "https://github.com/valentindev89"
     },
     {
-      "name": "Alperen Aksoy <alperenaksoydev@gmail.com>",
-      "url": "https://github.com/alperendev98"
+      "name": "Valentin Yushkevich <valentindev89@gmail.com>",
+      "url": "https://github.com/valentindev89"
     }
   ],
   "main": "src/api/server/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alperendev98/Shopmost"
+    "url": "https://github.com/valentindev89/Shopmost"
   },
   "scripts": {
     "compile": "babel src/store -d dist/store --quiet",
