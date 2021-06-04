@@ -10,26 +10,22 @@
     "cms"
   ],
   "homepage": "https://Shopmost.com",
-  "bugs": "https://github.com/valentindev89/Shopmost/issues",
+  "bugs": "https://github.com/wuyuebiz/Shopmost/issues",
   "license": "MIT",
   "author": {
-    "name": "Valentin Yushkevich <valentindev89@gmail.com>",
-    "url": "https://github.com/valentindev89"
+    "name": "Wu Yue <wuyuebiz@gmail.com>",
+    "url": "https://github.com/wuyuebiz"
   },
   "contributors": [
     {
-      "name": "Valentin Yushkevich <valentindev89@gmail.com>",
-      "url": "https://github.com/valentindev89"
-    },
-    {
-      "name": "Valentin Yushkevich <valentindev89@gmail.com>",
-      "url": "https://github.com/valentindev89"
+      "name": "Wu Yue <wuyuebiz@gmail.com>",
+      "url": "https://github.com/wuyuebiz"
     }
   ],
   "main": "src/api/server/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/valentindev89/Shopmost"
+    "url": "https://github.com/wuyuebiz/Shopmost"
   },
   "scripts": {
     "compile": "babel src/store -d dist/store --quiet",
