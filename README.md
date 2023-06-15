@@ -54,7 +54,7 @@ Explore our demo store.
 
 <p align="left">
   <a href="https://demo.shopmost.io/admin" target="_blank">
-    <img alt="shopmost-backend-demo" height="35" alt="ShopMost Admin Demo" src="https://raw.githubusercontent.com/kkumarcodes/Shopmost/dev/.github/images/shopmost-admin-demo.png"/>
+Admin Panel
   </a>
 </p>
 <b>Demo user:</b>
@@ -64,7 +64,7 @@ Password: 123456
 
 <p align="left">
   <a href="https://demo.shopmost.io/" target="_blank">
-    <img alt="shopmost-store-demo" height="35" alt="ShopMost Store Demo" src="https://raw.githubusercontent.com/kkumarcodes/Shopmost/dev/.github/images/shopmost-store-front-demo.png"/>
+Store Front
   </a>
 </p>
 
