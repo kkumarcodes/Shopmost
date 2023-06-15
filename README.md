@@ -68,11 +68,6 @@ Store Front
 If you like my work, feel free to:
 
 - ⭐ this repository. It helps.
-### Ask a question about ShopMost
-
-You can ask questions, and participate in discussions about ShopMost-related topics in the ShopMost Discord channel.
-
-<a href="https://discord.gg/GSzt7dt7RM"><img src="https://raw.githubusercontent.com/kkumarcodes/Shopmost/dev/.github/images/discord_banner_github.svg" /></a>
 
 ### Create a bug report
 
