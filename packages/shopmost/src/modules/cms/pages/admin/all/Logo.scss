@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  a {
+    align-self: center;
+    color: var(--primary);
+    padding: 3px;
+    svg {
+      width: 4rem;
+      height: 3rem;
+    }
+  }
+}

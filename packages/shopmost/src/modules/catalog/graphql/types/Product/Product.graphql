@@ -1,0 +1,30 @@
+"""
+Look up for a Product
+"""
+type Product {
+  productId: Int!
+  uuid: String!
+  name: String!
+  status: Int!
+  sku: String!
+  weight: Weight!
+  taxClass: Int
+  description: String
+  urlKey: String
+  metaTitle: String
+  metaDescription: String
+  metaKeywords: String
+  variantGroupId: ID
+  visibility: Int
+  groupId: ID
+  categories: [Category]
+  url: String
+  editUrl: String
+  updateApi: String!
+  deleteApi: String!
+}
+
+extend type Query {
+  product(id: ID): Product
+  searchProducts(query: String, page: Int, limit: Int): ProductCollection
+}

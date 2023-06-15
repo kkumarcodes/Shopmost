@@ -1,0 +1,7 @@
+{
+  "methods": [
+    "POST"
+  ],
+  "path": "/productComments",
+  "access": "public"
+}

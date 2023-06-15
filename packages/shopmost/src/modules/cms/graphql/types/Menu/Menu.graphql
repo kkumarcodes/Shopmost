@@ -1,0 +1,19 @@
+"""
+Represents a menu item
+"""
+type MenuItem {
+  name: String!
+  url: String!
+  children: [MenuItem]
+}
+
+"""
+Represents a menu
+"""
+type Menu {
+  items: [MenuItem]
+}
+
+extend type Query {
+  menu: Menu
+}

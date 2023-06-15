@@ -1,0 +1,23 @@
+"""
+Represents a product option
+"""
+type Option {
+  optionId: ID!
+  optionName: String!
+  optionType: String!
+  isRequired: Boolean!
+  values: [OptionValue]
+}
+
+"""
+Represents a product option value
+"""
+type OptionValue {
+  valueId: ID!
+  value: String!
+  extraPrice: Price!
+}
+
+extend type Product {
+  options: [Option]
+}

@@ -1,0 +1,12 @@
+"""
+Represents a page information.
+"""
+type PageInfo {
+  url: String!
+  title: String!
+  description: String!
+}
+
+extend type Query {
+  pageInfo: PageInfo
+}

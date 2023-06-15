@@ -1,0 +1,25 @@
+"""
+Retrieves a single admin user by ID
+"""
+type AdminUser {
+  adminUserId: Int!
+  uuid: String!
+  status: Int!
+  email: String!
+  fullName: String!
+}
+
+"""
+Retrieves a collection of admin users
+"""
+type AdminUserCollection {
+  items: [AdminUser]
+  currentPage: Int!
+  total: Int!
+  currentFilters: [Filter]
+}
+
+extend type Query {
+  adminUser(id: Int): AdminUser
+  adminUsers(filters: [FilterInput]): AdminUserCollection
+}

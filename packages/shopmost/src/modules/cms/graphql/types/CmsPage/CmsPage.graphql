@@ -1,0 +1,34 @@
+"""
+Lookup CMS page by ID
+"""
+type CmsPage {
+  cmsPageId: Int
+  uuid: String!
+  layout: String!
+  status: Int!
+  urlKey: String!
+  name: String!
+  content: String!
+  metaTitle: String
+  metaKeywords: String
+  metaDescription: String
+  url: String!
+  editUrl: String!
+  updateApi: String!
+  deleteApi: String!
+}
+
+"""
+Return a collection of CMS pages
+"""
+type CmsPageCollection {
+  items: [CmsPage]
+  currentPage: Int!
+  total: Int!
+  currentFilters: [Filter]
+}
+
+extend type Query {
+  cmsPage(id: Int): CmsPage
+  cmsPages(filters: [FilterInput]): CmsPageCollection
+}
