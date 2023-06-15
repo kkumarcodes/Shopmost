@@ -15,9 +15,6 @@
   <a href="https://twitter.com/shopmostjs">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/shopmostjs?style=social">
   </a>
-  <a href="https://discord.gg/GSzt7dt7RM">
-    <img src="https://img.shields.io/discord/757179260417867879?label=discord" alt="Discord">
-  </a>
   <a href="https://opensource.org/licenses/GPL-3.0">
     <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License">
   </a>
@@ -47,28 +44,11 @@ ShopMost is a GraphQL Based and React ecommerce platform with essential commerce
 
 ## Demo
 
-Explore our demo store.
-
-<p align="center">
-<img alt="ShopMost Admin Demo" width="950" src="https://raw.githubusercontent.com/kkumarcodes/Shopmost/dev/.github/images/shopmost-backend-demo.png"/>
-</p>
-<p align="center">
-  <a href="https://demo.shopmost.io/admin" target="_blank">
-    <img alt="shopmost-backend-demo" height="35" alt="ShopMost Admin Demo" src="https://raw.githubusercontent.com/kkumarcodes/Shopmost/dev/.github/images/shopmost-admin-demo.png"/>
-  </a>
-</p>
 <b>Demo user:</b>
 
 Email: demo@gmail.com<br/>
 Password: 123456
-<p align="center">
-<img alt="ShopMost Store Demo" width="950" src="https://raw.githubusercontent.com/kkumarcodes/Shopmost/dev/.github/images/shopmost-product-detail.png"/>
-</p>
-<p align="center">
-  <a href="https://demo.shopmost.io/" target="_blank">
-    <img alt="shopmost-store-demo" height="35" alt="ShopMost Store Demo" src="https://raw.githubusercontent.com/kkumarcodes/Shopmost/dev/.github/images/shopmost-store-front-demo.png"/>
-  </a>
-</p>
+
 
 ## Quick Start
 
