@@ -12,7 +12,7 @@
 - MongoDB >= 3.2
 
 ```shell
-git clone https://github.com/alperendev98/Shopmost.git Shopmost
+git clone https://github.com/kkumarcodes/Shopmost.git Shopmost
 cd Shopmost
 npm install
 npm run build
@@ -55,4 +55,4 @@ npm start
 
 ## 4. Add default data
 
-You need to manually add default data to MongoDB. [Initialize MongoDB.](https://github.com/alperendev98/Shopmost/blob/master/docs/initialize-mongodb.md)
+You need to manually add default data to MongoDB. [Initialize MongoDB.](https://github.com/kkumarcodes/Shopmost/blob/master/docs/initialize-mongodb.md)
