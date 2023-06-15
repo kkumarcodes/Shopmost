@@ -5,7 +5,7 @@
 
 ## Docker
 
-We'll use `Shopmost/Shopmost` image. [About image](https://github.com/alperendev98/docker-Shopmost).
+We'll use `Shopmost/Shopmost` image. [About image](https://github.com/kkumarcodes/docker-Shopmost).
 
 1. Run MongoDB
 ```shell
