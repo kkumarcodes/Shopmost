@@ -13,9 +13,9 @@ Built with:
 
 ## Installation
 
-- [with GitHub](https://github.com/denisp107/Shopmost/blob/master/docs/getting-started.md)
-- [with Docker](https://github.com/denisp107/Shopmost/blob/master/docs/getting-started-docker.md)
-- [How to deploy a Shopmost on Ubuntu 16.04](https://github.com/denisp107/Shopmost/blob/master/docs/how-to-deploy-a-Shopmost-on-ubuntu-16-04.md)
+- [with GitHub](https://github.com/kkumarcodes/Shopmost/blob/master/docs/getting-started.md)
+- [with Docker](https://github.com/kkumarcodes/Shopmost/blob/master/docs/getting-started-docker.md)
+- [How to deploy a Shopmost on Ubuntu 16.04](https://github.com/kkumarcodes/Shopmost/blob/master/docs/how-to-deploy-a-Shopmost-on-ubuntu-16-04.md)
 
 ### Requirements
 * Node.js >= 8
@@ -24,7 +24,7 @@ Built with:
 
 ## Documentation
 
-[Documentation](https://github.com/valentindev89/Shopmost/tree/master/docs)
+[Documentation](https://github.com/kkumarcodes/Shopmost/tree/master/docs)
 
 
 ## Application Structure
