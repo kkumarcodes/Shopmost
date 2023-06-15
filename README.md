@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-<img alt="ShopMost" width="950" src="https://raw.githubusercontent.com/kkumarcodes/Shopmost/dev/.github/images/banner.png"/>
+<img alt="ShopMost" width="950" src="https://github.com/kkumarcodes/Shopmost/blob/master/banner.png"/>
 </p>
 
 ## Introduction
