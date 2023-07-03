@@ -68,7 +68,7 @@ module.exports = async (request, response, delegate, next) => {
       // Send a response with the cookie
       response.cookie(getAdminTokenCookieId(), token, {
         httpOnly: true,
-        maxAge: 1000 * 60 * 60 * 24
+        maxAge: 1000 * 60 * 60 * 24 * 7
       });
 
       return response.status(OK).json({
