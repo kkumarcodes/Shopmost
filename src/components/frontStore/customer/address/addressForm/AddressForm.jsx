@@ -58,7 +58,7 @@ export function CustomerAddressForm({
             placeholder: _('City'),
             validationRules: []
           },
-          sortOrder: 30
+          sortOrder: 40
         },
         {
           component: { default: Country },
@@ -68,7 +68,7 @@ export function CustomerAddressForm({
             setSelectedCountry,
             fieldName: 'address[country]'
           },
-          sortOrder: 40
+          sortOrder: 50
         },
         {
           component: { default: ProvinceAndPostcode },
@@ -77,7 +77,7 @@ export function CustomerAddressForm({
             allowCountries,
             selectedCountry
           },
-          sortOrder: 50
+          sortOrder: 60
         }
       ]}
     />
