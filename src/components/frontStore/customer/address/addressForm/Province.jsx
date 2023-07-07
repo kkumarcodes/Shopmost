@@ -3,41 +3,41 @@ import PropTypes from 'prop-types';
 import { Field } from '@components/common/form/Field';
 import { _ } from '@shopmost/shopmost/src/lib/locale/translate';
 
-export function Province({
+export function State({
   selectedCountry,
-  selectedProvince,
+  selectedState,
   allowCountries,
-  fieldName = 'province'
+  fieldName = 'State'
 }) {
-  const provinces = selectedCountry
-    ? allowCountries.find((c) => c.code === selectedCountry).provinces
+  const States = selectedCountry
+    ? allowCountries.find((c) => c.code === selectedCountry).States
     : [];
   return (
     <Field
       type="select"
-      value={provinces.find((p) => p.code === selectedProvince)?.code}
+      value={States.find((p) => p.code === selectedState)?.code}
       name={fieldName}
-      label={_('Province')}
-      placeholder={_('Province')}
+      label={_('State')}
+      placeholder={_('State')}
       validationRules={[
         {
           rule: 'notEmpty',
-          message: _('Province is required')
+          message: _('State is required')
         }
       ]}
-      options={provinces.map((p) => ({ value: p.code, text: p.name }))}
+      options={States.map((p) => ({ value: p.code, text: p.name }))}
     />
   );
 }
 
-Province.propTypes = {
-  selectedProvince: PropTypes.string,
+State.propTypes = {
+  selectedState: PropTypes.string,
   selectedCountry: PropTypes.string,
   allowCountries: PropTypes.arrayOf(
     PropTypes.shape({
       code: PropTypes.string,
       name: PropTypes.string,
-      provinces: PropTypes.arrayOf(
+      States: PropTypes.arrayOf(
         PropTypes.shape({
           code: PropTypes.string,
           name: PropTypes.string
@@ -48,8 +48,8 @@ Province.propTypes = {
   fieldName: PropTypes.string
 };
 
-Province.defaultProps = {
-  selectedProvince: '',
+State.defaultProps = {
+  selectedState: '',
   selectedCountry: '',
-  fieldName: 'province'
+  fieldName: 'State'
 };
