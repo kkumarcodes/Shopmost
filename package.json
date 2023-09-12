@@ -9,9 +9,9 @@
   "scripts": {
     "prepublishOnly": "node prepublish.js",
     "prepack": "node prepublish.js",
-    "install": "nodemon ./src/shopmost install",
+    "install": "node ./src/shopmost install",
     "dev": "nodemon ./src/shopmost start",
-    "build": "nodemon ./src/shopmost build",
+    "build": "node ./src/shopmost build",
     "start": "nodemon ./src/shopmost start",
     "test": "jest"
   },

@@ -6,7 +6,7 @@ import React, { useReducer } from 'react';
 import ReactDOM from 'react-dom';
 import produce from 'immer';
 import Button from '@components/common/form/Button';
-import { assign } from '../../../../lib/util/assign';
+import { assign } from '../../../lib/util/assign';
 import './Alert.scss';
 import { Card } from '@components/admin/cms/Card';
 

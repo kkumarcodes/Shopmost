@@ -5,8 +5,8 @@ const { CONSTANTS } = require('../../helpers');
 
 module.exports.getTailwindConfig = function getTailwindConfig(route) {
   const defaultTailwindConfig = route.isAdmin
-    ? require('../../../../modules/cms/services/tailwind.admin.config.js')
-    : require('../../../../modules/cms/services/tailwind.frontStore.config.js');
+    ? require('../../../modules/cms/services/tailwind.admin.config.js')
+    : require('../../../modules/cms/services/tailwind.frontStore.config.js');
 
   let tailwindConfig = {};
   if (!route.isAdmin) {

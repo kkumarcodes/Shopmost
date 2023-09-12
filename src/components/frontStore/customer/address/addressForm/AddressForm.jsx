@@ -7,7 +7,7 @@ import Area from '@components/common/Area';
 import { Country } from '@components/frontStore/customer/address/addressForm/Country';
 import { ProvinceAndPostcode } from '@components/frontStore/customer/address/addressForm/ProvinceAndPostcode';
 import { NameAndTelephone } from '@components/frontStore/customer/address/addressForm/NameAndTelephone';
-import { _ } from '../../../../lib/locale/translate';
+import { _ } from '../../../../../lib/locale/translate';
 
 export function CustomerAddressForm({
   allowCountries,

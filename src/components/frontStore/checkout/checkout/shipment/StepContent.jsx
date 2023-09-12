@@ -7,7 +7,7 @@ import { useClient } from 'urql';
 import CustomerAddressForm from '@components/frontStore/customer/address/addressForm/Index';
 import { Form } from '@components/common/form/Form';
 import { useCheckout } from '@components/common/context/checkout';
-import { _ } from '../../../../lib/locale/translate';
+import { _ } from '../../../../../lib/locale/translate';
 
 const QUERY = `
   query Query($cartId: String) {

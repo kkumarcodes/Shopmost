@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { _ } from '../../../../lib/locale/translate';
+import { _ } from '../../../../../lib/locale/translate';
 
 export function Tax({ taxClass, amount }) {
   return (

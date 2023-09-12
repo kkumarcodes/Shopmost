@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { toast } from 'react-toastify';
 import Area from '@components/common/Area';
-import { _ } from '../../../../lib/locale/translate';
+import { _ } from '../../../../../lib/locale/translate';
 
 export default function Layout({ account: { logoutApi } }) {
   const logout = async (e) => {
