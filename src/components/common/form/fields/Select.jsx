@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Error from '@components/common/form/fields/Error';
 import '../Field.scss';
-import { _ } from '@shopmost/shopmost/src/lib/locale/translate';
+import { _ } from '../../../../lib/locale/translate';
 
 const Select = React.forwardRef((props, ref) => {
   const {

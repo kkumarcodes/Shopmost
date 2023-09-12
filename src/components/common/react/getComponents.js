@@ -1,9 +1,9 @@
 import { useAppState } from '@components/common/context/app';
-import { get } from '@shopmost/shopmost/src/lib/util/get';
+import { get } from '../../../../lib/util/get';
 
 /* eslint-disable global-require */
 const { resolve } = require('path');
-const { CONSTANTS } = require('@shopmost/shopmost/src/lib/helpers');
+const { CONSTANTS } = require('../../../../lib/helpers');
 
 export function getComponents() {
   const componentsPath = get(useAppState(), 'componentsPath');
@@ -12,7 +12,7 @@ export function getComponents() {
   } else {
     return require(resolve(
       CONSTANTS.ROOTPATH,
-      '.shopmost/build/',
+      '.evershop/build/',
       componentsPath
     ));
   }

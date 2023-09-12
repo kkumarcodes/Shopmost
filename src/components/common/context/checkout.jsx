@@ -49,9 +49,9 @@ export function CheckoutProvider({
         setOrderPlaced(true);
         setOrderId(response.data.data.uuid);
         setError(null);
-        let redirectUrl = response.data.data.redirect || '/checkoutSuccessUrl';
+        // let redirectUrl = response.data.data.redirect || checkoutSuccessUrl;
 
-        window.location.href = redirectUrl;
+        // window.location.href = redirectUrl;
       } else {
         setError(response.data.error.message);
       }

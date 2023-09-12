@@ -1,7 +1,7 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { useAppState } from '@components/common/context/app';
-import { get } from '@shopmost/shopmost/src/lib/util/get';
+import { get } from '../../../../lib/util/get';
 import './Notification.scss';
 
 export default function Notification() {

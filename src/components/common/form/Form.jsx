@@ -2,12 +2,12 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import PubSub from 'pubsub-js';
-import { get } from '@shopmost/shopmost/src/lib/util/get';
+import { get } from '../../../../lib/util/get';
 import {
   FORM_SUBMIT,
   FORM_VALIDATED
-} from '@shopmost/shopmost/src/lib/util/events';
-import { serializeForm } from '@shopmost/shopmost/src/lib/util/formToJson';
+} from '../../../../lib/util/events';
+import { serializeForm } from '../../../../lib/util/formToJson';
 import Button from '@components/common/form/Button';
 import { validator } from './validator';
 
