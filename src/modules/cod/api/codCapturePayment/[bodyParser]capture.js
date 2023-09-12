@@ -1,9 +1,9 @@
-const { select, update, insert } = require('@shopmost/postgres-query-builder');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { select, update, insert } = require('../../../../postgres-query-builder');
+const { pool } = require('../../../../lib/postgres/connection');
 const {
   INVALID_PAYLOAD,
   OK
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {
