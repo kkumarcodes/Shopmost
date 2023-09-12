@@ -1,7 +1,7 @@
 const {
   INVALID_PAYLOAD,
   INTERNAL_SERVER_ERROR
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 const { getContextValue } = require('../../../graphql/services/contextHelper');
 const removeItem = require('../removeCartItem/removeItem');
 

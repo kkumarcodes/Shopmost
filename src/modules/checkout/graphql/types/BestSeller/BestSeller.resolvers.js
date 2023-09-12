@@ -1,6 +1,6 @@
-const { select } = require('@shopmost/postgres-query-builder');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
-const { camelCase } = require('@shopmost/shopmost/src/lib/util/camelCase');
+const { select } = require('../../../../../postgres-query-builder');
+const { pool } = require('../../../../../lib/postgres/connection');
+const { camelCase } = require('../../../../../lib/util/camelCase');
 
 module.exports = {
   Query: {

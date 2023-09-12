@@ -1,5 +1,5 @@
-const { select } = require('@shopmost/postgres-query-builder');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { select } = require('../../../postgres-query-builder');
+const { pool } = require('../../../lib/postgres/connection');
 const { Cart } = require('./cart/Cart');
 
 module.exports = exports;

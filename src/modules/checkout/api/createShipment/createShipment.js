@@ -6,17 +6,17 @@ const {
   select,
   update,
   startTransaction
-} = require('@shopmost/postgres-query-builder');
+} = require('../../../../postgres-query-builder');
 const config = require('config');
 const {
   getConnection,
   pool
-} = require('@shopmost/shopmost/src/lib/postgres/connection');
+} = require('../../../../lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, deledate, next) => {

@@ -3,7 +3,7 @@ const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 const { getCartByUUID } = require('../../services/getCartByUUID');
 const { saveCart } = require('../../services/saveCart');
 

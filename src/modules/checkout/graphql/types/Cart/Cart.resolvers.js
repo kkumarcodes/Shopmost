@@ -1,6 +1,6 @@
-const { select } = require('@shopmost/postgres-query-builder');
-const { buildUrl } = require('@shopmost/shopmost/src/lib/router/buildUrl');
-const { camelCase } = require('@shopmost/shopmost/src/lib/util/camelCase');
+const { select } = require('../../../../../postgres-query-builder');
+const { buildUrl } = require('../../../../../lib/router/buildUrl');
+const { camelCase } = require('../../../../../lib/util/camelCase');
 const { getCartByUUID } = require('../../../services/getCartByUUID');
 
 module.exports = {

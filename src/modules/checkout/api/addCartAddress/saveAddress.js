@@ -1,11 +1,11 @@
 /* eslint-disable camelcase */
-const { insert, select } = require('@shopmost/postgres-query-builder');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { insert, select } = require('../../../../postgres-query-builder');
+const { pool } = require('../../../../lib/postgres/connection');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 const { addressValidator } = require('../../services/addressValidator');
 const { getCartByUUID } = require('../../services/getCartByUUID');
 const { saveCart } = require('../../services/saveCart');

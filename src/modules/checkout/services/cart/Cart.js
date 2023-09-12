@@ -1,14 +1,14 @@
 /* eslint-disable no-underscore-dangle */
 const isEqualWith = require('lodash/isEqualWith');
-const { select, del } = require('@shopmost/postgres-query-builder');
+const { select, del } = require('../../../../postgres-query-builder');
 const { v4: uuidv4 } = require('uuid');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { pool } = require('../../../../lib/postgres/connection');
 const { DataObject } = require('./DataObject');
 const { Item } = require('./Item');
 const { toPrice } = require('../toPrice');
 const { getSetting } = require('../../../setting/services/setting');
 const { default: axios } = require('axios');
-const { buildUrl } = require('@shopmost/shopmost/src/lib/router/buildUrl');
+const { buildUrl } = require('../../../../lib/router/buildUrl');
 const { getTaxPercent } = require('../../../tax/services/getTaxPercent');
 const { getTaxRates } = require('../../../tax/services/getTaxRates');
 const {
@@ -265,7 +265,7 @@ exports.Cart = class Cart extends DataObject {
           if (!this.getData('shipping_address_id')) {
             return null;
           }
-          // By default, ShopMost supports free shipping and flat rate shipping method
+          // By default, EverShop supports free shipping and flat rate shipping method
           // Load shipping method from database
           const shippingMethodQuery = select().from('shipping_method');
           shippingMethodQuery

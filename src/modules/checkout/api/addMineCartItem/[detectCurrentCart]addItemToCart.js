@@ -1,4 +1,4 @@
-const { select } = require('@shopmost/postgres-query-builder');
+const { select } = require('../../../../postgres-query-builder');
 const {
   setContextValue,
   getContextValue
@@ -9,8 +9,8 @@ const {
   INVALID_PAYLOAD,
   INTERNAL_SERVER_ERROR,
   OK
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+} = require('../../../../lib/util/httpStatus');
+const { pool } = require('../../../../lib/postgres/connection');
 const { createNewCart } = require('../../services/createNewCart');
 
 module.exports = async (request, response, delegate, next) => {

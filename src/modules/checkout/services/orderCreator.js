@@ -6,9 +6,9 @@ const {
   select,
   startTransaction,
   update
-} = require('@shopmost/postgres-query-builder');
+} = require('../../../../postgres-query-builder');
 const { v4: uuidv4 } = require('uuid');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { pool } = require('../../../lib/postgres/connection');
 
 /* Default validation rules */
 let validationServices = [
