@@ -1,5 +1,5 @@
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
-const { select } = require('@shopmost/postgres-query-builder');
+const { pool } = require('../../../lib/postgres/connection');
+const { select } = require('../../../postgres-query-builder');
 
 module.exports.getTaxRates = async function getTaxRates(
   taxClassId,
