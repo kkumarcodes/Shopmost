@@ -1,4 +1,4 @@
-const { provinces } = require('@shopmost/shopmost/src/lib/locale/provinces');
+const { provinces } = require('../../../../../lib/locale/provinces');
 
 module.exports = {
   Query: {

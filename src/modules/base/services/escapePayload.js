@@ -1,5 +1,5 @@
-const secret = require('@shopmost/shopmost/src/modules/base/services/secret');
-console.log(secret);
+const secret = require('../../../../modules/base/services/secret');
+
 function escapeHtmlTags(str) {
   const regex = /<([a-zA-Z]+)(?:\s[^>]*)?>|<\/([a-zA-Z]+)>/g;
   const replacements = {

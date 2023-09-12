@@ -1,7 +1,7 @@
 const {
   INTERNAL_SERVER_ERROR
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
-const { debug } = require('@shopmost/shopmost/src/lib/log/debuger');
+} = require('../../../../lib/util/httpStatus');
+const { debug } = require('../../../../lib/log/debuger');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (err, request, response, delegate, next) => {

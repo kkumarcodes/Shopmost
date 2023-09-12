@@ -1,4 +1,4 @@
-const { timezones } = require('@shopmost/shopmost/src/lib/locale/timezones');
+const { timezones } = require('../../../../../lib/locale/timezones');
 
 module.exports = {
   Query: {

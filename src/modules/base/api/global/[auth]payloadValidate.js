@@ -2,14 +2,13 @@ const Ajv = require('ajv');
 const addFormats = require('ajv-formats');
 const {
   INVALID_PAYLOAD
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
-const secret = require('@shopmost/shopmost/src/modules/base/services/secret');
+} = require('../../../../lib/util/httpStatus');
 const markSkipEscape = require('../../services/markSkipEscape');
 
 // Initialize the ajv instance
 const ajv = new Ajv({
   strict: false,
-  useDefaults: true
+  useDefaults: 'empty'
 });
 
 // Add the formats

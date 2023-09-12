@@ -1,4 +1,4 @@
-const { currencies } = require('@shopmost/shopmost/src/lib/locale/currencies');
+const { currencies } = require('../../../../../lib/locale/currencies');
 
 module.exports = {
   Query: {

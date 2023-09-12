@@ -1,7 +1,7 @@
-const { contries } = require('@shopmost/shopmost/src/lib/locale/countries');
-const { provinces } = require('@shopmost/shopmost/src/lib/locale/provinces');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
-const { select } = require('@shopmost/postgres-query-builder');
+const { contries } = require('../../../../../lib/locale/countries');
+const { provinces } = require('../../../../../lib/locale/provinces');
+const { pool } = require('../../../../../lib/postgres/connection');
+const { select } = require('../../../../../postgres-query-builder');
 
 module.exports = {
   Query: {

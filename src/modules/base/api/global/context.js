@@ -1,4 +1,4 @@
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { pool } = require('../../../../lib/postgres/connection');
 const {
   setContextValue,
   hasContextValue
