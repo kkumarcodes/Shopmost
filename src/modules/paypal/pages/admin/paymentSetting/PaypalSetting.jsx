@@ -18,7 +18,7 @@ export default function PaypalPayment({
       <Card.Session>
         <div className="grid grid-cols-3 gap-2">
           <div className="col-span-1 items-center flex">
-            <h4>Enable:</h4>
+            <h4>Enable?</h4>
           </div>
           <div className="col-span-2">
             <Toggle name="paypalPaymentStatus" value={paypalPaymentStatus} />
@@ -28,7 +28,7 @@ export default function PaypalPayment({
       <Card.Session>
         <div className="grid grid-cols-3 gap-2">
           <div className="col-span-1 items-center flex">
-            <h4>Dislay Name:</h4>
+            <h4>Dislay Name</h4>
           </div>
           <div className="col-span-2">
             <Field
@@ -43,7 +43,7 @@ export default function PaypalPayment({
       <Card.Session>
         <div className="grid grid-cols-3 gap-2">
           <div className="col-span-1 items-center flex">
-            <h4>Client ID:</h4>
+            <h4>Client ID</h4>
           </div>
           <div className="col-span-2">
             <Field
@@ -58,7 +58,7 @@ export default function PaypalPayment({
       <Card.Session>
         <div className="grid grid-cols-3 gap-2">
           <div className="col-span-1 items-center flex">
-            <h4>Client Secret:</h4>
+            <h4>Client Secret</h4>
           </div>
           <div className="col-span-2">
             <Field
@@ -73,7 +73,7 @@ export default function PaypalPayment({
       <Card.Session>
         <div className="grid grid-cols-3 gap-2">
           <div className="col-span-1 items-center flex">
-            <h4>Environment:</h4>
+            <h4>Environment</h4>
           </div>
           <div className="col-span-2">
             <Field

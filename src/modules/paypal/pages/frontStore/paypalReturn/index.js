@@ -1,7 +1,7 @@
-const { select } = require('@shopmost/postgres-query-builder');
+const { select } = require('../../../../postgres-query-builder');
 const { default: axios } = require('axios');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
-const { buildUrl } = require('@shopmost/shopmost/src/lib/router/buildUrl');
+const { pool } = require('../../../../lib/postgres/connection');
+const { buildUrl } = require('../../../../lib/router/buildUrl');
 const {
   getContextValue
 } = require('../../../../graphql/services/contextHelper');

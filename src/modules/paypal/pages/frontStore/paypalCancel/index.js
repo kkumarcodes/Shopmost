@@ -1,6 +1,6 @@
-const { select, update } = require('@shopmost/postgres-query-builder');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
-const { buildUrl } = require('@shopmost/shopmost/src/lib/router/buildUrl');
+const { select, update } = require('../../../../postgres-query-builder');
+const { pool } = require('../../../../lib/postgres/connection');
+const { buildUrl } = require('../../../../lib/router/buildUrl');
 
 module.exports = async (request, response) => {
   // When the user cancelled the payment from PayPal

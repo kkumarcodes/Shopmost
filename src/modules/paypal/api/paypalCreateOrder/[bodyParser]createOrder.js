@@ -1,17 +1,17 @@
 /* eslint-disable camelcase */
 const { default: axios } = require('axios');
-const { select, update } = require('@shopmost/postgres-query-builder');
+const { select, update } = require('../../../../postgres-query-builder');
 const { getContextValue } = require('../../../graphql/services/contextHelper');
 const { getSetting } = require('../../../setting/services/setting');
 const { toPrice } = require('../../../checkout/services/toPrice');
-const { buildUrl } = require('@shopmost/shopmost/src/lib/router/buildUrl');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { buildUrl } = require('../../../../lib/router/buildUrl');
+const { pool } = require('../../../../lib/postgres/connection');
 const { getApiBaseUrl } = require('../../services/getApiBaseUrl');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, stack, next) => {
@@ -86,7 +86,7 @@ module.exports = async (request, response, stack, next) => {
         )}`,
         shipping_preference: 'SET_PROVIDED_ADDRESS',
         user_action: 'PAY_NOW',
-        brand_name: await getSetting('storeName', 'ShopMost')
+        brand_name: await getSetting('storeName', 'Evershop')
       }
     };
     const shippingAddress = await select()
