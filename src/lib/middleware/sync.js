@@ -1,5 +1,5 @@
-const logger = require('@shopmost/shopmost/src/lib/log/logger');
-const { debug } = require('@shopmost/shopmost/src/lib/log/debuger');
+const logger = require('../log/logger');
+const { debug } = require('../log/debuger');
 const { setDelegate } = require('./delegate');
 
 // eslint-disable-next-line no-multi-assign

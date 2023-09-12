@@ -1,6 +1,6 @@
 const { resolve } = require('path');
-const { getEnabledExtensions } = require('../../../bin/extension');
-const { getCoreModules } = require('@shopmost/shopmost/bin/lib/loadModules');
+const { getEnabledExtensions } = require('../../extension');
+const { getCoreModules } = require('../loadModules');
 const { scanRouteComponents } = require('./scanForComponents');
 const { getConfig } = require('../util/getConfig');
 const { CONSTANTS } = require('../helpers');

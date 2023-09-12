@@ -12,7 +12,7 @@ describe('buildMiddlewareFunction', () => {
 
   it('Middleware function return desired value', async () => {
     // Visit a url
-    const response = await axios.get(`http://localhost:${port}/delegateTest`, {
+    await axios.get(`http://localhost:${port}/delegateTest`, {
       validateStatus: function (status) {
         return status >= 200 && status < 600;
       }
@@ -25,26 +25,6 @@ describe('buildMiddlewareFunction', () => {
     expect(delegates['returnTwo']).toEqual(undefined);
     expect(delegates['returnThree']).toEqual(3);
   });
-
-  // it('No promising delegate left pending', async () => {
-  //   // Visit a url
-  //   const response = await axios.get('http://localhost:3002/delegateTest', {
-  //     validateStatus: function (status) {
-  //       return status >= 200 && status < 600;
-  //     },
-  //   });
-
-  //   const test = require('../app/modules/delegate/controllers/frontStore/delegateTest/collection').test;
-  //   const delegates = test.mock.results[0].value;
-  //   const promises = [];
-  //   Object.keys(delegates).forEach((id) => {
-  //     // Check if middleware is async
-  //     if (delegates[id] instanceof Promise) {
-  //       promises.push(stack[id]);
-  //     }
-  //   });
-  //   expect(delegates.find((delegate) => delegate.id === '')).toEqual(0);
-  // });
 
   afterAll((done) => {
     close(server, done);

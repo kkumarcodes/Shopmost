@@ -4,11 +4,11 @@
 const path = require('path');
 const {
   addDefaultMiddlewareFuncs
-} = require('@shopmost/shopmost/bin/lib/addDefaultMiddlewareFuncs');
+} = require('../../../../lib/addDefaultMiddlewareFuncs');
 const express = require('express');
 const {
   loadModuleRoutes
-} = require('@shopmost/shopmost/src/lib/router/loadModuleRoutes');
+} = require('../../../router/loadModuleRoutes');
 const { getModuleMiddlewares } = require('../..');
 const { getRoutes } = require('../../../router/Router');
 const { once } = require('events');

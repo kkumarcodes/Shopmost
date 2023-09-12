@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs');
-const { getCoreModules } = require('@shopmost/shopmost/bin/lib/loadModules');
-const { getEnabledExtensions } = require('@shopmost/shopmost/bin/extension');
-const { debug } = require('@shopmost/shopmost/src/lib/log/debuger');
+const { getCoreModules } = require('../../lib/loadModules');
+const { getEnabledExtensions } = require('../../extension');
+const { debug } = require('../../lib/log/debuger');
 
 function loadModuleSubscribers(modulePath) {
   const subscribers = [];
