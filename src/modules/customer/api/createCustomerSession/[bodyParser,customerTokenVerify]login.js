@@ -1,9 +1,9 @@
-const { select, insertOnUpdate } = require('@shopmost/postgres-query-builder');
+const { select, insertOnUpdate } = require('../../../../postgres-query-builder');
 const { compareSync } = require('bcryptjs');
 const { sign } = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
-const { camelCase } = require('@shopmost/shopmost/src/lib/util/camelCase');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { camelCase } = require('../../../../lib/util/camelCase');
+const { pool } = require('../../../../lib/postgres/connection');
 const { getTokenCookieId } = require('../../../auth/services/getTokenCookieId');
 const {
   getContextValue,
@@ -12,7 +12,7 @@ const {
 const {
   INVALID_PAYLOAD,
   OK
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

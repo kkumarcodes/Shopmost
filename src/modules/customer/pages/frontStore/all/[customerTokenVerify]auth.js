@@ -2,7 +2,7 @@ const {
   getContextValue,
   setContextValue
 } = require('../../../../graphql/services/contextHelper');
-const { get } = require('@shopmost/shopmost/src/lib/util/get');
+const { get } = require('../../../../../lib/util/get');
 
 module.exports = (request, response, delegate, next) => {
   // Get the token Payload

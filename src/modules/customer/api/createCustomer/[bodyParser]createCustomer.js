@@ -1,11 +1,11 @@
-const { insert, select } = require('@shopmost/postgres-query-builder');
+const { insert, select } = require('../../../../postgres-query-builder');
 const bcrypt = require('bcryptjs');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { pool } = require('../../../../lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
-const { buildUrl } = require('@shopmost/shopmost/src/lib/router/buildUrl');
+} = require('../../../../lib/util/httpStatus');
+const { buildUrl } = require('../../../../lib/router/buildUrl');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

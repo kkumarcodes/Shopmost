@@ -1,12 +1,12 @@
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
-const { select } = require('@shopmost/postgres-query-builder');
+const { select } = require('../../../../../postgres-query-builder');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');
-const { get } = require('@shopmost/shopmost/src/lib/util/get');
-const { buildUrl } = require('@shopmost/shopmost/src/lib/router/buildUrl');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { get } = require('../../../../../lib/util/get');
+const { buildUrl } = require('../../../../../lib/router/buildUrl');
+const { pool } = require('../../../../../lib/postgres/connection');
 const { getTokenSecret } = require('../../../../auth/services/getTokenSecret');
 const { generateToken } = require('../../../../auth/services/generateToken');
 const {
