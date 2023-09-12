@@ -6,11 +6,11 @@ const {
   commit,
   rollback,
   select
-} = require('@shopmost/postgres-query-builder');
+} = require('../../../../postgres-query-builder');
 const {
   getConnection
-} = require('@shopmost/shopmost/src/lib/postgres/connection');
-const { getConfig } = require('@shopmost/shopmost/src/lib/util/getConfig');
+} = require('../../../../lib/postgres/connection');
+const { getConfig } = require('../../../../lib/util/getConfig');
 const { getSetting } = require('../../../setting/services/setting');
 
 // eslint-disable-next-line no-unused-vars
