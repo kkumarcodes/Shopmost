@@ -1,12 +1,12 @@
 /* eslint-disable camelcase */
-const { insert, select } = require('@shopmost/postgres-query-builder');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
-const { buildUrl } = require('@shopmost/shopmost/src/lib/router/buildUrl');
+const { insert, select } = require('../../../../postgres-query-builder');
+const { pool } = require('../../../../lib/postgres/connection');
+const { buildUrl } = require('../../../../lib/router/buildUrl');
 const {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

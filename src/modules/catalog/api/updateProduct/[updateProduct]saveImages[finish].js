@@ -1,10 +1,10 @@
-const { insert, del, update } = require('@shopmost/postgres-query-builder');
+const { insert, del, update } = require('../../../../postgres-query-builder');
 const sharp = require('sharp');
 const config = require('config');
 const path = require('path');
 const { existsSync } = require('fs');
-const { get } = require('@shopmost/shopmost/src/lib/util/get');
-const { CONSTANTS } = require('@shopmost/shopmost/src/lib/helpers');
+const { get } = require('../../../../lib/util/get');
+const { CONSTANTS } = require('../../../../lib/helpers');
 
 module.exports = async (request, response, delegate) => {
   let gallery = get(request, 'body.images', []);

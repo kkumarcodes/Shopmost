@@ -2,13 +2,13 @@ const {
   commit,
   rollback,
   select
-} = require('@shopmost/postgres-query-builder');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
-const { buildUrl } = require('@shopmost/shopmost/src/lib/router/buildUrl');
+} = require('../../../../postgres-query-builder');
+const { pool } = require('../../../../lib/postgres/connection');
+const { buildUrl } = require('../../../../lib/router/buildUrl');
 const {
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {
@@ -50,7 +50,7 @@ module.exports = async (request, response, delegate, next) => {
           },
           {
             rel: 'view',
-            href: buildUrl('productView', { url_key: product.url_key }),
+            href: buildUrl('productView', { uuid: product.uuid }),
             action: 'GET',
             types: ['text/xml']
           },

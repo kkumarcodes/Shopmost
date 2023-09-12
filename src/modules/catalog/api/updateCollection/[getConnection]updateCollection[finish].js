@@ -1,7 +1,7 @@
-const { update, select } = require('@shopmost/postgres-query-builder');
+const { update, select } = require('../../../../postgres-query-builder');
 const {
   INVALID_PAYLOAD
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 
 module.exports = async (request, response, delegate) => {
   const connection = await delegate.getConnection;

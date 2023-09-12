@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-const { del, select } = require('@shopmost/postgres-query-builder');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { del, select } = require('../../../../postgres-query-builder');
+const { pool } = require('../../../../lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 
 module.exports = async (request, response, delegate, next) => {
   try {

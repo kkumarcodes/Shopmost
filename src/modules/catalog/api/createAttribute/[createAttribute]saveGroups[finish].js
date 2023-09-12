@@ -1,8 +1,8 @@
 /* eslint-disable no-await-in-loop */
 /* eslint-disable no-prototype-builtins */
 /* eslint-disable no-restricted-syntax */
-const { insertOnUpdate, select } = require('@shopmost/postgres-query-builder');
-const { get } = require('@shopmost/shopmost/src/lib/util/get');
+const { insertOnUpdate, select } = require('../../../../postgres-query-builder');
+const { get } = require('../../../../lib/util/get');
 
 module.exports = async (request, response, delegate) => {
   const attribute = await delegate.createAttribute;

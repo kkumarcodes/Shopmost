@@ -1,7 +1,7 @@
-const { startTransaction } = require('@shopmost/postgres-query-builder');
+const { startTransaction } = require('../../../../postgres-query-builder');
 const {
   getConnection
-} = require('@shopmost/shopmost/src/lib/postgres/connection');
+} = require('../../../../lib/postgres/connection');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response) => {

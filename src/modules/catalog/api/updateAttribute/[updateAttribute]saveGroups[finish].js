@@ -5,8 +5,8 @@ const {
   del,
   select,
   insertOnUpdate
-} = require('@shopmost/postgres-query-builder');
-const { get } = require('@shopmost/shopmost/src/lib/util/get');
+} = require('../../../../postgres-query-builder');
+const { get } = require('../../../../lib/util/get');
 
 module.exports = async (request, response, delegate) => {
   const attribute = await delegate.updateAttribute;

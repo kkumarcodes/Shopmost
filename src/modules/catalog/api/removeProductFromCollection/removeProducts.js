@@ -1,11 +1,11 @@
 const {
   getConnection
-} = require('@shopmost/shopmost/src/lib/postgres/connection');
+} = require('../../../../lib/postgres/connection');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 const {
   insert,
   startTransaction,
@@ -13,7 +13,7 @@ const {
   commit,
   select,
   del
-} = require('@shopmost/postgres-query-builder');
+} = require('../../../../postgres-query-builder');
 
 module.exports = async (request, response, delegate, next) => {
   const { collection_id, product_id } = request.params;

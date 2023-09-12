@@ -1,5 +1,5 @@
 import ProductList from '@components/frontStore/catalog/product/list/List';
-import { _ } from '@shopmost/shopmost/src/lib/locale/translate';
+import { _ } from '../../../../lib/locale/translate';
 import PropTypes from 'prop-types';
 import React from 'react';
 

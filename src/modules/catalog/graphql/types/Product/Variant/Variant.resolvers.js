@@ -1,7 +1,7 @@
-const { select } = require('@shopmost/postgres-query-builder');
+const { select } = require('../../../../../../postgres-query-builder');
 const uniqid = require('uniqid');
-const { buildUrl } = require('@shopmost/shopmost/src/lib/router/buildUrl');
-const { camelCase } = require('@shopmost/shopmost/src/lib/util/camelCase');
+const { buildUrl } = require('../../../../../../lib/router/buildUrl');
+const { camelCase } = require('../../../../../../lib/util/camelCase');
 
 module.exports = {
   Product: {
@@ -165,6 +165,13 @@ module.exports = {
         .leftJoin('product_description')
         .on(
           'product_description.product_description_product_id',
+          '=',
+          'product.product_id'
+        );
+      query
+        .innerJoin('product_inventory')
+        .on(
+          'product_inventory.product_inventory_product_id',
           '=',
           'product.product_id'
         );

@@ -4,17 +4,17 @@ const {
   startTransaction,
   commit,
   rollback
-} = require('@shopmost/postgres-query-builder');
+} = require('../../../../postgres-query-builder');
 const uniqid = require('uniqid');
 const {
   pool,
   getConnection
-} = require('@shopmost/shopmost/src/lib/postgres/connection');
+} = require('../../../../lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

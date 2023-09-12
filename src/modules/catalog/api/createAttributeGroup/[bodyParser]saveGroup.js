@@ -4,15 +4,15 @@ const {
   commit,
   rollback,
   select
-} = require('@shopmost/postgres-query-builder');
+} = require('../../../../postgres-query-builder');
 const {
   getConnection,
   pool
-} = require('@shopmost/shopmost/src/lib/postgres/connection');
+} = require('../../../../lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

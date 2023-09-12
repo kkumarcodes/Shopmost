@@ -1,7 +1,7 @@
-const { update, select } = require('@shopmost/postgres-query-builder');
+const { update, select } = require('../../../../postgres-query-builder');
 const {
   INVALID_PAYLOAD
-} = require('@shopmost/shopmost/src/lib/util/httpStatus');
+} = require('../../../../lib/util/httpStatus');
 
 module.exports = async (request, response, delegate) => {
   const connection = await delegate.getConnection;
@@ -34,6 +34,12 @@ module.exports = async (request, response, delegate) => {
         .and('product_id', '<>', product.product_id)
         .execute(connection);
     }
+
+    // Update product inventory
+    await update('product_inventory')
+      .given(request.body)
+      .where('product_inventory_product_id', '=', product.product_id)
+      .execute(connection);
   } catch (e) {
     if (!e.message.includes('No data was provided')) {
       throw e;

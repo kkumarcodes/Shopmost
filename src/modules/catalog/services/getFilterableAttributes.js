@@ -1,11 +1,11 @@
-const { select } = require('@shopmost/postgres-query-builder');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { select } = require('../../../postgres-query-builder');
+const { pool } = require('../../../lib/postgres/connection');
 const {
   getProductsByCategoryBaseQuery
 } = require('./getProductsByCategoryBaseQuery');
 
 module.exports.getFilterableAttributes = async (categoryId) => {
-  const productsQuery = await getProductsByCategoryBaseQuery(categoryId);
+  const productsQuery = await getProductsByCategoryBaseQuery(categoryId, true);
   productsQuery.select('product.product_id');
   // Get the list of productIds before applying pagination, sorting...etc
   // Base on this list, we will find all attribute,

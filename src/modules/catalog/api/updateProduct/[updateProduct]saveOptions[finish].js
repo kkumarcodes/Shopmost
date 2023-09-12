@@ -5,8 +5,8 @@ const {
   del,
   select,
   update
-} = require('@shopmost/postgres-query-builder');
-const { merge } = require('@shopmost/shopmost/src/lib/util/merge');
+} = require('../../../../postgres-query-builder');
+const { merge } = require('../../../../lib/util/merge');
 
 async function saveOptionValues(optionId, values, connection) {
   if (!values || values === 0) {
