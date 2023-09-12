@@ -29,3 +29,6 @@ public
 
 .env.*
 .serverless
+.evershop/*
+media/*
+
