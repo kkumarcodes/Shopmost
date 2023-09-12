@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { Form } from '@components/common/form/Form';
 import { Field } from '@components/common/form/Field';
 import { useCheckoutStepsDispatch } from '@components/common/context/checkoutSteps';
-import { _ } from '@shopmost/shopmost/src/lib/locale/translate';
+import { _ } from '../../../../lib/locale/translate';
 
 export function Edit({
   customer,

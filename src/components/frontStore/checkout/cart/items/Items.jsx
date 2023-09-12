@@ -5,7 +5,7 @@ import { ItemOptions } from './ItemOptions';
 import { ItemVariantOptions } from './ItemVariantOptions';
 import './Items.scss';
 import { useAppDispatch } from '@components/common/context/app';
-import { _ } from '@shopmost/shopmost/src/lib/locale/translate';
+import { _ } from '../../../../lib/locale/translate';
 
 function Items({ items }) {
   const AppContextDispatch = useAppDispatch();
