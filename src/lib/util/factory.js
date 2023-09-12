@@ -1,7 +1,7 @@
 class Factory {
   static processors = {};
   static values = {};
-  static raws = {};
+  static raws = [];
 
   static async create(name, value) {
     // If the value is already created, throw an error
@@ -10,6 +10,8 @@ class Factory {
         `Value ${name} is already created. Please use another name.`
       );
     }
+
+    this.values[name] = true;
 
     if (!this.processors[name]) {
       return value;
