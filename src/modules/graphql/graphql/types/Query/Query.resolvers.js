@@ -1,5 +1,5 @@
 module.exports = {
   Query: {
-    hello: () => 'Hello ShopMost!'
+    hello: () => 'Hello EverShop!'
   }
 };

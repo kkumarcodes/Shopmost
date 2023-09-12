@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-const { get } = require('@shopmost/shopmost/src/lib/util/get');
+const { get } = require('../../../lib/util/get');
 
 module.exports.getContextValue = function getContextValue(
   request,

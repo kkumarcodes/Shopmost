@@ -2,9 +2,9 @@ const { execute } = require('graphql');
 const { validate } = require('graphql/validation');
 const { parse } = require('graphql');
 let schema = require('../../services/buildSchema');
-const isDevelopmentMode = require('@shopmost/shopmost/src/lib/util/isDevelopmentMode');
+const isDevelopmentMode = require('../../../../lib/util/isDevelopmentMode');
 const { getContext } = require('../../services/contextHelper');
-const { OK } = require('@shopmost/shopmost/src/lib/util/httpStatus');
+const { OK } = require('../../../../lib/util/httpStatus');
 
 module.exports = async function graphql(request, response, delegate, next) {
   const { body } = request;

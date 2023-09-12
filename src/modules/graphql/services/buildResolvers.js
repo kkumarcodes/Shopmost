@@ -1,8 +1,8 @@
 const path = require('path');
 const { loadFilesSync } = require('@graphql-tools/load-files');
 const { mergeResolvers } = require('@graphql-tools/merge');
-const { CONSTANTS } = require('@shopmost/shopmost/src/lib/helpers');
-const { getEnabledExtensions } = require('../../../../bin/extension');
+const { CONSTANTS } = require('../../../lib/helpers');
+const { getEnabledExtensions } = require('../../../extension');
 
 module.exports.buildResolvers = function buildResolvers() {
   const typeSources = [
