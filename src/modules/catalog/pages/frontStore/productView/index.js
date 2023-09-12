@@ -1,7 +1,7 @@
-const { select, node } = require('../../../../postgres-query-builder');
-const { pool } = require('../../../../lib/postgres/connection');
-const { get } = require('../../../../lib/util/get');
-const { getConfig } = require('../../../../lib/util/getConfig');
+const { select, node } = require('../../../../../postgres-query-builder');
+const { pool } = require('../../../../../lib/postgres/connection');
+const { get } = require('../../../../../lib/util/get');
+const { getConfig } = require('../../../../../lib/util/getConfig');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');

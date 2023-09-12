@@ -4,8 +4,8 @@ import { Name } from '@components/frontStore/catalog/product/list/item/Name';
 import { Thumbnail } from '@components/frontStore/catalog/product/list/item/Thumbnail';
 import { Price } from '@components/frontStore/catalog/product/list/item/Price';
 import Area from '@components/common/Area';
-import { get } from '../../../../lib/util/get';
-import { _ } from '../../../../lib/locale/translate';
+import { get } from '../../../../../lib/util/get';
+import { _ } from '../../../../../lib/locale/translate';
 
 export default function ProductList({ products = [], countPerRow = 3 }) {
   if (products.length === 0) {

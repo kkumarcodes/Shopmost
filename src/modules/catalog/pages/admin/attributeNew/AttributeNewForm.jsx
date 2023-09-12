@@ -3,7 +3,7 @@ import React from 'react';
 import { toast } from 'react-toastify';
 import Area from '@components/common/Area';
 import { Form } from '@components/common/form/Form';
-import { get } from '../../../../lib/util/get';
+import { get } from '../../../../../lib/util/get';
 
 export default function AttributeNewForm({ action }) {
   const id = 'attributeForm';

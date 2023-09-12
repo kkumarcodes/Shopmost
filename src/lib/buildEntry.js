@@ -64,8 +64,8 @@ module.exports.buildEntry = async function buildEntry(
       let contentClient = `
       import React from 'react';
       import ReactDOM from 'react-dom';
-      import Area from '../../../../components/common/Area';
-      import Hydrate from '../../../../components/common/react/client/${
+      import Area from '../components/common/Area';
+      import Hydrate from '../components/common/react/client/${
         route.isAdmin ? 'HydrateAdmin' : 'HydrateFrontStore'
       }';
       `;
@@ -96,7 +96,7 @@ module.exports.buildEntry = async function buildEntry(
         contentServer += '\r\n';
         contentServer += `import ReactDOM from 'react-dom'; `;
         contentServer += '\r\n';
-        contentServer += `import Area from '../../../../components/common/Area';`;
+        contentServer += `import Area from '../components/common/Area';`;
         contentServer += '\r\n';
         contentServer += `Area.defaultProps.components = ${inspect(areas, {
           depth: 5

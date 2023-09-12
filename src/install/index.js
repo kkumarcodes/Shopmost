@@ -239,51 +239,51 @@ async function install() {
   const modules = [
     {
       name: 'auth',
-      resolve: path.resolve(__dirname, '../../src/modules/auth')
+      resolve: path.resolve(__dirname, '../modules/auth')
     },
     {
       name: 'base',
-      resolve: path.resolve(__dirname, '../../src/modules/base')
+      resolve: path.resolve(__dirname, '../modules/base')
     },
     {
       name: 'catalog',
-      resolve: path.resolve(__dirname, '../../src/modules/catalog')
+      resolve: path.resolve(__dirname, '../modules/catalog')
     },
     {
       name: 'checkout',
-      resolve: path.resolve(__dirname, '../../src/modules/checkout')
+      resolve: path.resolve(__dirname, '../modules/checkout')
     },
     {
       name: 'cms',
-      resolve: path.resolve(__dirname, '../../src/modules/cms')
+      resolve: path.resolve(__dirname, '../modules/cms')
     },
     {
       name: 'cod',
-      resolve: path.resolve(__dirname, '../../src/modules/cod')
+      resolve: path.resolve(__dirname, '../modules/cod')
     },
     {
       name: 'customer',
-      resolve: path.resolve(__dirname, '../../src/modules/customer')
+      resolve: path.resolve(__dirname, '../modules/customer')
     },
     {
       name: 'graphql',
-      resolve: path.resolve(__dirname, '../../src/modules/graphql')
+      resolve: path.resolve(__dirname, '../modules/graphql')
     },
     {
       name: 'paypal',
-      resolve: path.resolve(__dirname, '../../src/modules/paypal')
+      resolve: path.resolve(__dirname, '../modules/paypal')
     },
     {
       name: 'promotion',
-      resolve: path.resolve(__dirname, '../../src/modules/promotion')
+      resolve: path.resolve(__dirname, '../modules/promotion')
     },
     {
       name: 'setting',
-      resolve: path.resolve(__dirname, '../../src/modules/setting')
+      resolve: path.resolve(__dirname, '../modules/setting')
     },
     {
       name: 'stripe',
-      resolve: path.resolve(__dirname, '../../src/modules/stripe')
+      resolve: path.resolve(__dirname, '../modules/stripe')
     }
   ];
 

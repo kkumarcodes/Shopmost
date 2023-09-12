@@ -53,8 +53,8 @@ module.exports.buildTailwind = async function buildTailwind(
 
       // Use PostCss to parse tailwind.css with tailwind config
       const defaultTailwindConfig = route.isAdmin
-        ? require('../../../../modules/cms/services/tailwind.admin.config.js')
-        : require('../../../../modules/cms/services/tailwind.frontStore.config.js');
+        ? require('../modules/cms/services/tailwind.admin.config.js')
+        : require('../modules/cms/services/tailwind.frontStore.config.js');
 
       let tailwindConfig = {};
       if (route.isAdmin) {

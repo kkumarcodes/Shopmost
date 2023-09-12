@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import PubSub from 'pubsub-js';
-import { get } from '../../../../lib/util/get';
+import { get } from '../../../lib/util/get';
 import {
   FORM_SUBMIT,
   FORM_VALIDATED

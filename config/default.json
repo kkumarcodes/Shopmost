@@ -94,21 +94,5 @@
             "user": "postgres",
             "password": "postgres"
         }
-    },
-    "themeConfig": {
-        "headTags": {
-            "scripts": [
-                {
-                    "src": "src/js/custom.js",
-                    "async": true
-                }
-            ],
-            "links": [
-                {
-                    "rel": "stylesheet",
-                    "href": "src/css/custom.css"
-                }
-            ]
-        }
     }
 }

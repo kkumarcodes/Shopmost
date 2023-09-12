@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import uniqid from 'uniqid';
 import { Input } from '@components/common/form/fields/Input';
 import { useAppState } from '@components/common/context/app';
-import { get } from '../../../../lib/util/get';
+import { get } from '../../../../../lib/util/get';
 import { VariantType } from '@components/admin/catalog/productEdit/variants/VariantType';
 
 export function SearchModal({ keyword, variants, addVariant, searchAPI }) {

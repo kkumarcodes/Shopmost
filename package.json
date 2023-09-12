@@ -9,6 +9,7 @@
   "scripts": {
     "prepublishOnly": "node prepublish.js",
     "prepack": "node prepublish.js",
+    "install": "nodemon ./src/shopmost install",
     "dev": "nodemon ./src/shopmost start",
     "build": "nodemon ./src/shopmost build",
     "start": "nodemon ./src/shopmost start",

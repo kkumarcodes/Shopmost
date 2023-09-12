@@ -2,9 +2,9 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import { useAppState } from '../../../../lib/context/app';
-import { get } from '../../../../lib/util/get';
-import { Field } from '../@components/common/form/Field';
-import { Card } from '../../../../../cms/views/admin/Card';
+import { get } from '../../../../../lib/util/get';
+import { Field } from '@components/common/form/Field';
+import { Card } from '@components/admin/cms/Card';
 
 export default function CustomOption() {
   const context = useAppState();

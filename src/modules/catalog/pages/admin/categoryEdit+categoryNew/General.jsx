@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Area from '@components/common/Area';
-import { get } from '../../../../lib/util/get';
+import { get } from '../../../../../lib/util/get';
 import { Field } from '@components/common/form/Field';
 import { Card } from '@components/admin/cms/Card';
 import CkeditorField from '@components/common/form/fields/Ckeditor';

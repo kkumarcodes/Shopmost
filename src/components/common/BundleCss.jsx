@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAppState } from '@components/common/context/app';
-import { get } from '../../../../lib/util/get';
+import { get } from '../../lib/util/get';
 import Link from './Link';
 
 export default function BundleCSS() {
