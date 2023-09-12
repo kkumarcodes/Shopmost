@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export default function AttributeNameRow({ url, name }) {
+export default function CollectionNameRow({ name, url }) {
   return (
     <td>
       <div>
@@ -13,7 +13,7 @@ export default function AttributeNameRow({ url, name }) {
   );
 }
 
-AttributeNameRow.propTypes = {
+CollectionNameRow.propTypes = {
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
 };

@@ -3,7 +3,7 @@ import React from 'react';
 import PubSub from 'pubsub-js';
 import Area from '@components/common/Area';
 import { Input } from '@components/common/form/fields/Input';
-import { FORM_FIELD_UPDATED } from '@shopmost/shopmost/src/lib/util/events';
+import { FORM_FIELD_UPDATED } from '../../../../lib/util/events';
 
 function Products({ targetProducts, maxQty = '' }) {
   const [products, setProducts] = React.useState(targetProducts);

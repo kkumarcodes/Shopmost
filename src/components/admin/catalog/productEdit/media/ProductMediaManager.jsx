@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import uniqid from 'uniqid';
 import { toast } from 'react-toastify';
-import { get } from '@shopmost/shopmost/src/lib/util/get';
+import { get } from '../../../../lib/util/get';
 import './ProductMediaManager.scss';
 
 function Upload({ addImage, productImageUploadUrl }) {
