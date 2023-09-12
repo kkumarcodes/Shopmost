@@ -1,4 +1,4 @@
-const { getConfig } = require('@shopmost/shopmost/src/lib/util/getConfig');
+const { getConfig } = require('../../../../../lib/util/getConfig');
 
 module.exports = {
   Setting: {
@@ -7,7 +7,7 @@ module.exports = {
       if (storeName) {
         return storeName.value;
       } else {
-        return 'An Amazing ShopMost Store';
+        return 'An Amazing EverShop Store';
       }
     },
     storeDescription: (setting) => {
@@ -17,7 +17,7 @@ module.exports = {
       if (storeDescription) {
         return storeDescription.value;
       } else {
-        return 'An Amazing ShopMost Store';
+        return 'An Amazing EverShop Store';
       }
     },
     storeLanguage: () => {

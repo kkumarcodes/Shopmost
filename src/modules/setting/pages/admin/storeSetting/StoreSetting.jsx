@@ -7,8 +7,8 @@ import { Form } from '@components/common/form/Form';
 import { Card } from '@components/admin/cms/Card';
 import SettingMenu from '@components/admin/setting/SettingMenu';
 
-const StatesQuery = `
-  query State($countries: [String]) {
+const ProvincesQuery = `
+  query Province($countries: [String]) {
     provinces (countries: $countries) {
       code
       name
@@ -44,14 +44,14 @@ const CurrencyQuery = `
   }
 `;
 
-function State({
+function Province({
   selectedCountry = 'US',
-  selectedState,
+  selectedProvince,
   allowedCountries = [],
-  fieldName = 'storeState'
+  fieldName = 'storeProvince'
 }) {
   const [result] = useQuery({
-    query: StatesQuery,
+    query: ProvincesQuery,
     variables: { countries: allowedCountries }
   });
   const { data, fetching, error } = result;
@@ -69,10 +69,10 @@ function State({
   return (
     <Field
       type="select"
-      value={selectedState}
+      value={selectedProvince}
       name={fieldName}
-      label="State"
-      placeholder="State"
+      label="Province"
+      placeholder="Province"
       validationRules={['notEmpty']}
       options={data.provinces
         .filter((p) => p.countryCode === selectedCountry)
@@ -81,18 +81,18 @@ function State({
   );
 }
 
-State.propTypes = {
+Province.propTypes = {
   allowedCountries: PropTypes.arrayOf(PropTypes.string),
   fieldName: PropTypes.string,
   selectedCountry: PropTypes.string,
-  selectedState: PropTypes.string
+  selectedProvince: PropTypes.string
 };
 
-State.defaultProps = {
+Province.defaultProps = {
   allowedCountries: [],
-  fieldName: 'storeState',
+  fieldName: 'storeProvince',
   selectedCountry: 'US',
-  selectedState: ''
+  selectedProvince: ''
 };
 
 function Country({
@@ -231,7 +231,7 @@ export default function StoreSetting({
     storeCountry,
     storeAddress,
     storeCity,
-    storeState,
+    storeProvince,
     storePostalCode,
     weightUnit
   }
@@ -327,8 +327,8 @@ export default function StoreSetting({
                     />
                   </div>
                   <div>
-                    <State
-                      selectedState={storeState}
+                    <Province
+                      selectedProvince={storeProvince}
                       selectedCountry={selectedCountry}
                     />
                   </div>
@@ -362,7 +362,7 @@ StoreSetting.propTypes = {
     storeCountry: PropTypes.string,
     storeAddress: PropTypes.string,
     storeCity: PropTypes.string,
-    storeState: PropTypes.string,
+    storeProvince: PropTypes.string,
     storePostalCode: PropTypes.string
   }).isRequired
 };
@@ -384,7 +384,7 @@ export const query = `
       storeCountry
       storeAddress
       storeCity
-      storeState
+      storeProvince
       storePostalCode
     }
   }

@@ -1,4 +1,4 @@
-const { select } = require('@shopmost/postgres-query-builder');
+const { select } = require('../../../../../postgres-query-builder');
 
 module.exports = {
   Query: {
@@ -13,7 +13,7 @@ module.exports = {
       if (storeName) {
         return storeName.value;
       } else {
-        return 'ShopMost Store';
+        return 'EverShop Store';
       }
     }
   }
