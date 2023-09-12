@@ -1,4 +1,4 @@
-const { update } = require('@shopmost/postgres-query-builder');
+const { update } = require('../../../../postgres-query-builder');
 
 module.exports = async (request, response, delegate) => {
   const connection = await delegate.getConnection;

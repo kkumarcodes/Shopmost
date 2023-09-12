@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Area from '@components/common/Area';
 import { Field } from '@components/common/form/Field';
-import { get } from '@shopmost/shopmost/src/lib/util/get';
+import { get } from '../../../../lib/util/get';
 import { BuyXGetY } from '@components/admin/promotion/couponEdit/BuyXGetY';
 import { TargetProducts } from '@components/admin/promotion/couponEdit/TargetProduct';
 

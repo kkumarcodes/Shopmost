@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
-const { select } = require('@shopmost/postgres-query-builder');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
-const { getConfig } = require('@shopmost/shopmost/src/lib/util/getConfig');
+const { select } = require('../../../postgres-query-builder');
+const { pool } = require('../../../lib/postgres/connection');
+const { getConfig } = require('../../../lib/util/getConfig');
 const { toPrice } = require('../../checkout/services/toPrice');
 const { getCartTotalBeforeDiscount } = require('./getCartTotalBeforeDiscount');
 

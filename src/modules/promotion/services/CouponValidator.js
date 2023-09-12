@@ -1,6 +1,6 @@
-const { select } = require('@shopmost/postgres-query-builder');
+const { select } = require('../../../postgres-query-builder');
 const { DateTime } = require('luxon');
-const { pool } = require('@shopmost/shopmost/src/lib/postgres/connection');
+const { pool } = require('../../../lib/postgres/connection');
 const { getCartTotalBeforeDiscount } = require('./getCartTotalBeforeDiscount');
 const { getSetting } = require('../../setting/services/setting');
 
