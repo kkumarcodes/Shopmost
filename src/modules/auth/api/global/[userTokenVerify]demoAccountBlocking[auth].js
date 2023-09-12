@@ -1,5 +1,5 @@
-const { getConfig } = require('@shopmost/shopmost/src/lib/util/getConfig');
-const { UNAUTHORIZED } = require('@shopmost/shopmost/src/lib/util/httpStatus');
+const { getConfig } = require('../../../../lib/util/getConfig');
+const { UNAUTHORIZED } = require('../../../../lib/util/httpStatus');
 const { getContextValue } = require('../../../graphql/services/contextHelper');
 
 module.exports = (request, response, delegate, next) => {

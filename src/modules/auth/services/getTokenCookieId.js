@@ -1,3 +1,3 @@
-const { getConfig } = require('@shopmost/shopmost/src/lib/util/getConfig');
+const { getConfig } = require('../../../lib/util/getConfig');
 
 module.exports.getTokenCookieId = () => getConfig('jwt.cookieId', 'token');

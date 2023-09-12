@@ -1,4 +1,4 @@
-const { buildUrl } = require('@shopmost/shopmost/src/lib/router/buildUrl');
+const { buildUrl } = require('../../../../../lib/router/buildUrl');
 const {
   getContextValue,
   setContextValue
