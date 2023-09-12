@@ -12,7 +12,7 @@ export function getComponents() {
   } else {
     return require(resolve(
       CONSTANTS.ROOTPATH,
-      '.evershop/build/',
+      './build/',
       componentsPath
     ));
   }

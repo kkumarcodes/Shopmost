@@ -61,7 +61,7 @@ export default function Logo({ dashboardUrl }) {
             </linearGradient>
           </defs>
         </svg>
-        <span className="font-bold">ShopMost</span>
+        <span className="font-bold">EVERSHOP</span>
       </a>
     </div>
   );
