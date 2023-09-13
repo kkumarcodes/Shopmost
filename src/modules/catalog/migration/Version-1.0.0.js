@@ -77,9 +77,300 @@ module.exports = exports = async (connection) => {
     .given({
       attribute_id: color.insertId,
       attribute_code: 'color',
+      option_text: 'Aqua'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Blue'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'BlueViolet'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Brown'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Chocolate'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Coral'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Crimson'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Cyan'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'DarkBlue'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'DeepPink'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'FireBrick'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'ForestGreen'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Fuchsia'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Gold'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Gray'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Green'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Indigo'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Lime'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Navy'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Olive'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Orange'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Orange'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Purple'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Red'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Sienna'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Silver'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'SkyBlue'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Tan'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Teal'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
+      option_text: 'Tomato'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: color.insertId,
+      attribute_code: 'color',
       option_text: 'Yellow'
     })
     .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: size.insertId,
+      attribute_code: 'size',
+      option_text: 'XXS'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: size.insertId,
+      attribute_code: 'size',
+      option_text: 'XS'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: size.insertId,
+      attribute_code: 'size',
+      option_text: 'S'
+    })
+    .execute(connection);
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: size.insertId,
+      attribute_code: 'size',
+      option_text: 'M'
+    })
+    .execute(connection);
+
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: size.insertId,
+      attribute_code: 'size',
+      option_text: 'L'
+    })
+    .execute(connection);
+
+
+  await insert('attribute_option')
+    .given({
+      attribute_id: size.insertId,
+      attribute_code: 'size',
+      option_text: 'XL'
+    })
+    .execute(connection);
+
 
   await insert('attribute_option')
     .given({
@@ -93,15 +384,7 @@ module.exports = exports = async (connection) => {
     .given({
       attribute_id: size.insertId,
       attribute_code: 'size',
-      option_text: 'XL'
-    })
-    .execute(connection);
-
-  await insert('attribute_option')
-    .given({
-      attribute_id: size.insertId,
-      attribute_code: 'size',
-      option_text: 'SM'
+      option_text: '3XL'
     })
     .execute(connection);
 
