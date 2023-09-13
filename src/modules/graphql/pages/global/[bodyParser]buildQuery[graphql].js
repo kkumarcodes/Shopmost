@@ -48,6 +48,7 @@ module.exports = (request, response) => {
     }
 
     const subPath = getRouteBuildPath(route);
+
     query = readFileSync(
       path.resolve(CONSTANTS.BUILDPATH, subPath, 'server/query.graphql'),
       'utf8'
@@ -73,16 +74,25 @@ module.exports = (request, response) => {
       return value;
     });
     try {
+
       const json = JSON.parse(query);
       // Get all variables definition and build the operation name
-      const variables = JSON.parse(json.variables);
+
       let operation = 'query Query';
-      if (variables.defs.length > 0) {
-        const variablesString = variables.defs
-          .map((variable) => `$${variable.name}: ${variable.type}`)
-          .join(', ');
-        operation += `(${variablesString})`;
+      let variables = { values: {}, defs: [] }
+      try {
+        variables = JSON.parse(json.variables);
+
+        if (variables.defs?.length > 0) {
+          const variablesString = variables.defs
+            .map((variable) => `$${variable.name}: ${variable.type}`)
+            .join(', ');
+          operation += `(${variablesString})`;
+        }
+      } catch (err) {
+
       }
+
       request.body.graphqlQuery = `${operation} { ${json.query} } ${json.fragments}`;
       request.body.graphqlVariables = variables.values;
       request.body.propsMap = json.propsMap;

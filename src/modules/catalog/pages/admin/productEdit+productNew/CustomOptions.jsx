@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable camelcase */
 import React from 'react';
-import { useAppState } from '../../../../lib/context/app';
+import { useAppState } from '@components/common/context/app';
 import { get } from '../../../../../lib/util/get';
 import { Field } from '@components/common/form/Field';
 import { Card } from '@components/admin/cms/Card';

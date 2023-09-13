@@ -86,7 +86,7 @@ module.exports = async (request, response, stack, next) => {
         )}`,
         shipping_preference: 'SET_PROVIDED_ADDRESS',
         user_action: 'PAY_NOW',
-        brand_name: await getSetting('storeName', 'Evershop')
+        brand_name: await getSetting('storeName', 'Shopmost')
       }
     };
     const shippingAddress = await select()

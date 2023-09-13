@@ -48,20 +48,9 @@ export default function Logo({ dashboardUrl }) {
               <stop stopColor="#00546B" />
               <stop offset="1" stopColor="#27BEA3" />
             </linearGradient>
-            <linearGradient
-              id="paint2_linear_375_2"
-              x1="151.612"
-              x2="151.612"
-              y1="233.866"
-              y2="129.962"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#00546B" />
-              <stop offset="1" stopColor="#27BEA3" />
-            </linearGradient>
           </defs>
         </svg>
-        <span className="font-bold">EVERSHOP</span>
+        <span className="font-bold">SHOPMOST</span>
       </a>
     </div>
   );

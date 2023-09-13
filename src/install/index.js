@@ -182,7 +182,7 @@ async function install() {
 
   /* Start installation */
   const messages = [];
-  messages.push(`\n\n${green('EverShop is being installed ☕ ☕ ☕')}`);
+  messages.push(`\n\n${green('Shopmost is being installed ☕ ☕ ☕')}`);
   messages.push('Creating configuration file');
   const spinner = ora({
     text: green(messages.join('\n')),
@@ -307,7 +307,7 @@ async function install() {
         'Installation completed!. Run `npm run build` and `npm run start` to launch your store'
       ),
       {
-        title: 'EverShop',
+        title: 'Shopmost',
         titleAlignment: 'center',
         padding: 1,
         margin: 1,

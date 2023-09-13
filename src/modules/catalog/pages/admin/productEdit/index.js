@@ -1,5 +1,5 @@
-const { select } = require('../../../../postgres-query-builder');
-const { pool } = require('../../../../lib/postgres/connection');
+const { select } = require('../../../../../postgres-query-builder');
+const { pool } = require('../../../../../lib/postgres/connection');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');

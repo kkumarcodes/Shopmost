@@ -7,7 +7,7 @@ module.exports = {
       if (storeName) {
         return storeName.value;
       } else {
-        return 'An Amazing EverShop Store';
+        return 'An Amazing Shopmost Store';
       }
     },
     storeDescription: (setting) => {
@@ -17,7 +17,7 @@ module.exports = {
       if (storeDescription) {
         return storeDescription.value;
       } else {
-        return 'An Amazing EverShop Store';
+        return 'An Amazing Shopmost Store';
       }
     },
     storeLanguage: () => {

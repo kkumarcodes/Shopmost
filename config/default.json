@@ -90,7 +90,7 @@
         "database": {
             "host": "localhost",
             "port": "5433",
-            "database": "evershop",
+            "database": "shopmost",
             "user": "postgres",
             "password": "postgres"
         }
