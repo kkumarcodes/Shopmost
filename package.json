@@ -10,9 +10,9 @@
     "prepublishOnly": "node prepublish.js",
     "prepack": "node prepublish.js",
     "install": "node ./src/shopmost install",
-    "dev": "nodemon ./src/shopmost start",
+    "dev": "nodemon ./src/shopmost dev",
     "build": "node ./src/shopmost build",
-    "start": "nodemon ./src/shopmost start",
+    "start": "export NODE_ENV=development && nodemon ./src/shopmost start",
     "test": "jest"
   },
   "author": "Kyle Kumar",
