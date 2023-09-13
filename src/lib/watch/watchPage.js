@@ -1,6 +1,6 @@
 const touch = require('touch');
 const { resolve } = require('path');
-const { CONSTANTS } = require('../../../../lib/helpers');
+const { CONSTANTS } = require('../../lib/helpers');
 
 module.exports.watchPage = function (event, path) {
   if (event === 'add') {
