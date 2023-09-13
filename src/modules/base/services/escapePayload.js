@@ -1,4 +1,4 @@
-const secret = require('../../../../modules/base/services/secret');
+const secret = require('./secret');
 
 function escapeHtmlTags(str) {
   const regex = /<([a-zA-Z]+)(?:\s[^>]*)?>|<\/([a-zA-Z]+)>/g;
