@@ -15,7 +15,6 @@ const { Handler } = require('./middleware/Handler');
 const { getEnabledExtensions } = require('../extension');
 
 module.exports.createApp = () => {
-  console.log('createApp')
   /** Create express app */
   const app = express();
   // Enable trust proxy
@@ -23,7 +22,6 @@ module.exports.createApp = () => {
   /* Loading modules and initilize routes, components and services */
   const modules = getCoreModules();
 
-  console.log(modules, '==modules==')
   // Load routes and middleware functions
   modules.forEach((module) => {
     try {
@@ -39,7 +37,6 @@ module.exports.createApp = () => {
 
   /** Load extensions */
   const extensions = getEnabledExtensions();
-  console.log(extensions, '==extensions==')
   extensions.forEach((extension) => {
     try {
       // Load middleware functions
@@ -64,7 +61,6 @@ module.exports.createApp = () => {
     method: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH']
   });
 
-  console.log(routes, '==routes==')
   routes.forEach((route) => {
     //app.all(route.path, Handler.middleware());
     route.method.forEach((method) => {
