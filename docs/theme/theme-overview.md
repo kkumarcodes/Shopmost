@@ -6,14 +6,14 @@ A theme is a component of Shopmost application which provides a consistent look 
 
 In Shopmost, themes are designed to override or customize view layer, provided initially by modules or libraries.
 
-Just like [modules](/docs/development/module/module-overview), [Themes](./theme-overview) are implemented by different vendors (frontend developers) and intended to be distributed as additional packages for Shopmost system.
+Just like [modules](/module/module-overview), [Themes](./theme/theme-overview) are implemented by different vendors (frontend developers) and intended to be distributed as additional packages for Shopmost system.
 
 Out-of-the-box [Shopmost](https://shopmost.io/) application provides a default theme as a demonstration theme, which is fully customizable so you can develop your theme based on it.
 
 You can use the default theme for a live store, but if you want to customize the default design, you need to create a new theme. We strongly recommend not to change the default directly, because if you do edit the default files, your changes can be overwritten by the new version of the default files during upgrades.
 
 :::info
-You can checkout this repo for an example of theme [Eve Theme](https://github.com/shopmostcommerce/evetheme). It is a simple theme that helps you to understand how to create a theme for Shopmost.
+You can checkout this repo for an example of theme [Ten Theme](https://github.com/kkumarcodes/tentheme). It is a simple theme that helps you to understand how to create a theme for Shopmost.
 :::
 
 ## Where are themes located?
@@ -138,4 +138,4 @@ Changing a theme requires running the `build` command again.
 
 ## Example theme
 
-You can checkout this repo for an example of theme [Eve Theme](https://github.com/shopmostcommerce/evetheme). It is a simple theme that helps you to understand how to create a theme for Shopmost.
+You can checkout this repo for an example of theme [Ten Theme](https://github.com/kkumarcodes/tentheme). It is a simple theme that helps you to understand how to create a theme for Shopmost.
