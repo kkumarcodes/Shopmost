@@ -4,7 +4,7 @@
   <h1 align="center">ShopMost</h1>
 </p>
 <h4 align="center">
-    <a href="https://shopmost.io/docs/development/getting-started/introduction">Documentation</a> |
+    <a href="https://shopmost.io/docs/getting-started/introduction">Documentation</a> |
     <a href="https://demo.shopmost.io/">Demo</a>
 </h4>
 
@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-<img alt="ShopMost" width="950" src="https://github.com/kkumarcodes/Shopmost/blob/master/banner.png"/>
+<img alt="ShopMost" width="950" src="https://github.com/kkumarcodes/shopmost/blob/master/banner.png"/>
 </p>
 
 ## Introduction
@@ -36,11 +36,11 @@ npx create-shopmost-app my-app
 
 ## Documentation
 
-- [Installation guide](https://shopmost.io/docs/development/getting-started/installation-guide).
+- [Installation guide](https://kkumarcodes.github.io/Shopmost/docs/getting-started/installation-guide).
 
-- [Extension development](https://shopmost.io/docs/development/module/create-your-first-extension).
+- [Extension development](https://kkumarcodes.github.io/Shopmost/docs/module/create-your-first-extension).
 
-- [Theme development](https://shopmost.io/docs/development/theme/theme-overview).
+- [Theme development](https://kkumarcodes.github.io/Shopmost/docs/theme/theme-overview).
 
 
 ## Demo
