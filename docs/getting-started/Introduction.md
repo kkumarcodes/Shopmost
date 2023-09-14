@@ -1,11 +1,3 @@
----
-sidebar_position: 1
-keywords:
-- Shopmost introduction
-sidebar_label: Introduction
-title: Free open-source Node Ecommerce Platform
-description: Shopmost is a full stack Node Ecommerce platform that helps developing an e-commerce store. Shopmost is a flexible with both admin panel and front store are extensible.
----
 
 # Shopmost – An Open-Source Node Ecommerce Platform Introduction
 
@@ -39,7 +31,7 @@ Shopmost's highly modular structure is a result of several open source technolog
 
 :::info
 
-Check [this document](/docs/getting-started/system-requirements) for more detail about system requirement of Shopmost.
+Check [this document](/getting-started/system-requirements) for more detail about system requirement of Shopmost.
 :::
 
 ## Backend - React Ecommerce Dashboard
@@ -57,5 +49,5 @@ The admin panel is also designed to be extensible and customizable. Developers c
 The Shopmost frontend is designed to optimize storefront customization, with highly extensible themes being the central customization mechanism.
 
 :::info
-Check out the theme documentation [here](/docs/theme/theme-overview).
+Check out the theme documentation [here](/theme/theme-overview).
 :::

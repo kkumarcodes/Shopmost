@@ -1,27 +1,17 @@
----
-sidebar_position: 10
-keywords:
-- Shopmost installation
-sidebar_label: Installation guide
-title: Shopmost installation guide.
- # Wite a good SEO description here.
-description: This document will guide you through the installation process of Shopmost. The quick installation guide is also available to help you install Shopmost template quickly.
----
-
 # Installation guide
 
 The following installation guides will guide you step-by-step to create a new Shopmost project and get it started.
 
 :::info
 
-Please check [this document](/docs/getting-started/system-requirements) for the system requirement list.
+Please check [this document](/getting-started/system-requirements) for the system requirement list.
 
 ### Step 1: Run the installation script
 
 Before running this script, make sure that you have an empty database ready for Shopmost.
 :::info
 
-Please check [this document](/docs/getting-started/system-requirements) for the system requirement list.
+Please check [this document](/getting-started/system-requirements) for the system requirement list.
 
 :::
 This installation script will do the following tasks:
