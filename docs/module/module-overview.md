@@ -67,5 +67,5 @@ A module is a directory that contains 5 parts:
 
 There are two types of modules:
 
-1. Core module: Those modules are developed and maintained by the Shopmost team. They are located in @shopmost/shopmost/src/modules
+1. Core module: Those modules are developed and maintained by the Shopmost team. They are located in ./modules
 2. Extension: Those modules developed by a third party/developer. They are located in the ‘extensions’ folder at the root level. We will learn more about the extension in the next sections.
