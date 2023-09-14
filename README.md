@@ -36,11 +36,11 @@ npx create-shopmost-app my-app
 
 ## Documentation
 
-- [Installation guide](https://kkumarcodes.github.io/Shopmost/docs/getting-started/installation-guide).
+- [Installation guide](https://kkumarcodes.github.io/Shopmost/#/getting-started/installation-guide).
 
-- [Extension development](https://kkumarcodes.github.io/Shopmost/docs/module/create-your-first-extension).
+- [Module development](https://kkumarcodes.github.io/Shopmost/#/module/module-overview).
 
-- [Theme development](https://kkumarcodes.github.io/Shopmost/docs/theme/theme-overview).
+- [Theme development](https://kkumarcodes.github.io/Shopmost/#/theme/theme-overview).
 
 
 ## Demo
