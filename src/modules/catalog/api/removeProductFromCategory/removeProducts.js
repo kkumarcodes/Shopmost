@@ -13,7 +13,7 @@ const {
   commit,
   select,
   del
-} = require('../../../../postgres-query-builder');
+} = require('../../../../bin/postgres-query-builder');
 
 module.exports = async (request, response, delegate, next) => {
   const { category_id, product_id } = request.params;

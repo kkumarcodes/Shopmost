@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 const isEqualWith = require('lodash/isEqualWith');
-const { select, del } = require('../../../../postgres-query-builder');
+const { select, del } = require('../../../../bin/postgres-query-builder');
 const { v4: uuidv4 } = require('uuid');
 const { pool } = require('../../../../lib/postgres/connection');
 const { DataObject } = require('./DataObject');

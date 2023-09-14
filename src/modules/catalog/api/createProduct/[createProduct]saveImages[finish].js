@@ -1,4 +1,4 @@
-const { insert, update } = require('../../../../postgres-query-builder');
+const { insert, update } = require('../../../../bin/postgres-query-builder');
 const sharp = require('sharp');
 const config = require('config');
 const path = require('path');

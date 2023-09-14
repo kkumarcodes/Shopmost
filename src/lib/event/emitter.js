@@ -1,4 +1,4 @@
-const { insert } = require('../../postgres-query-builder');
+const { insert } = require('../../bin/postgres-query-builder');
 const { pool } = require('../../lib/postgres/connection');
 
 module.exports.emit = async function emit(name, data) {

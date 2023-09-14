@@ -2,7 +2,7 @@ const {
   commit,
   rollback,
   select
-} = require('../../../../postgres-query-builder');
+} = require('../../../../bin/postgres-query-builder');
 const { pool } = require('../../../../lib/postgres/connection');
 const { buildUrl } = require('../../../../lib/router/buildUrl');
 const {

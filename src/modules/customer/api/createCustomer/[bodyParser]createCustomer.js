@@ -1,4 +1,4 @@
-const { insert, select } = require('../../../../postgres-query-builder');
+const { insert, select } = require('../../../../bin/postgres-query-builder');
 const bcrypt = require('bcryptjs');
 const { pool } = require('../../../../lib/postgres/connection');
 const {

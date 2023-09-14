@@ -6,7 +6,7 @@ const {
   insert,
   rollback,
   select
-} = require('../../../postgres-query-builder');
+} = require('../../../bin/postgres-query-builder');
 const {
   pool,
   getConnection

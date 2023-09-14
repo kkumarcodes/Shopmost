@@ -6,7 +6,7 @@ const {
   select,
   startTransaction,
   update
-} = require('../../../postgres-query-builder');
+} = require('../../../bin/postgres-query-builder');
 const { v4: uuidv4 } = require('uuid');
 const { pool } = require('../../../lib/postgres/connection');
 

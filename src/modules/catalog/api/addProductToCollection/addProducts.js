@@ -12,7 +12,7 @@ const {
   rollback,
   commit,
   select
-} = require('../../../../postgres-query-builder');
+} = require('../../../../bin/postgres-query-builder');
 
 module.exports = async (request, response, delegate, next) => {
   const { collection_id } = request.params;

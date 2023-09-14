@@ -1,7 +1,7 @@
 /* eslint-disable no-await-in-loop */
 /* eslint-disable no-prototype-builtins */
 /* eslint-disable no-restricted-syntax */
-const { insertOnUpdate, select } = require('../../../../postgres-query-builder');
+const { insertOnUpdate, select } = require('../../../../bin/postgres-query-builder');
 const { get } = require('../../../../lib/util/get');
 
 module.exports = async (request, response, delegate) => {

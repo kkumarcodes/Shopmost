@@ -1,4 +1,4 @@
-const { select } = require('../../../../postgres-query-builder');
+const { select } = require('../../../../bin/postgres-query-builder');
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
 const { pool } = require('../../../../lib/postgres/connection');

@@ -1,5 +1,5 @@
 const { default: axios } = require('axios');
-const { select } = require('../../../../postgres-query-builder');
+const { select } = require('../../../../bin/postgres-query-builder');
 const { getSetting } = require('../../../setting/services/setting');
 const { setContextValue } = require('../../../graphql/services/contextHelper');
 const { getConfig } = require('../../../../lib/util/getConfig');

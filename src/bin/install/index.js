@@ -11,7 +11,7 @@ const {
   startTransaction,
   commit,
   rollback
-} = require('../postgres-query-builder');
+} = require('../bin/postgres-query-builder');
 const { prompt } = require('enquirer');
 const { CONSTANTS } = require('../lib/helpers');
 const { migrate } = require('./migrate');

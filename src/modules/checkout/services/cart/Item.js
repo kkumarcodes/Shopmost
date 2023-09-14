@@ -1,5 +1,5 @@
 const config = require('config');
-const { select } = require('../../../../postgres-query-builder');
+const { select } = require('../../../../bin/postgres-query-builder');
 const fs = require('fs');
 const path = require('path');
 const uniqid = require('uniqid');

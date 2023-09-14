@@ -1,4 +1,4 @@
-const { select } = require('../../../../../postgres-query-builder');
+const { select } = require('../../../../../bin/postgres-query-builder');
 const { camelCase } = require('../../../../../lib/util/camelCase');
 const { get } = require('../../../../../lib/util/get');
 

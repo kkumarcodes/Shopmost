@@ -1,7 +1,7 @@
 const { contries } = require('../../../../../lib/locale/countries');
 const { provinces } = require('../../../../../lib/locale/provinces');
 const { pool } = require('../../../../../lib/postgres/connection');
-const { select } = require('../../../../../postgres-query-builder');
+const { select } = require('../../../../../bin/postgres-query-builder');
 
 module.exports = {
   Query: {

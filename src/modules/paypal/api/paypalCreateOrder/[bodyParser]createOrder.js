@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 const { default: axios } = require('axios');
-const { select, update } = require('../../../../postgres-query-builder');
+const { select, update } = require('../../../../bin/postgres-query-builder');
 const { getContextValue } = require('../../../graphql/services/contextHelper');
 const { getSetting } = require('../../../setting/services/setting');
 const { toPrice } = require('../../../checkout/services/toPrice');

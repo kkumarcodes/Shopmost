@@ -1,4 +1,4 @@
-const { execute } = require('../postgres-query-builder');
+const { execute } = require('../bin/postgres-query-builder');
 
 module.exports.createMigrationTable = async function createMigrationTable(
   connection

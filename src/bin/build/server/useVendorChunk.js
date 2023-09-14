@@ -1,6 +1,6 @@
 const path = require('path');
 const { existsSync, rmSync } = require('fs');
-const { CONSTANTS } = require('../../lib/helpers');
+const { CONSTANTS } = require('../../../lib/helpers');
 const { loadModules } = require('../../serve/loadModules');
 const ora = require('ora');
 const { red, green } = require('kleur');

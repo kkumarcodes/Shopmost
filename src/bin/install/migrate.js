@@ -1,4 +1,4 @@
-const { insertOnUpdate } = require('../postgres-query-builder');
+const { insertOnUpdate } = require('../bin/postgres-query-builder');
 const { readdirSync, existsSync } = require('fs');
 const path = require('path');
 const semver = require('semver');

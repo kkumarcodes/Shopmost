@@ -4,7 +4,7 @@ const {
   startTransaction,
   commit,
   rollback
-} = require('../../../../postgres-query-builder');
+} = require('../../../../bin/postgres-query-builder');
 const uniqid = require('uniqid');
 const {
   pool,

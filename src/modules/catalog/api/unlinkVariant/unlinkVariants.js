@@ -1,4 +1,4 @@
-const { update } = require('../../../../postgres-query-builder');
+const { update } = require('../../../../bin/postgres-query-builder');
 const {
   getConnection
 } = require('../../../../lib/postgres/connection');

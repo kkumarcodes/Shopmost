@@ -1,4 +1,4 @@
-const { execute } = require('../../../../postgres-query-builder');
+const { execute } = require('../../../../bin/postgres-query-builder');
 
 // eslint-disable-next-line no-multi-assign
 module.exports = exports = async (connection) => {

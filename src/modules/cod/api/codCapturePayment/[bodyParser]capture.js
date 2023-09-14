@@ -1,4 +1,4 @@
-const { select, update, insert } = require('../../../../postgres-query-builder');
+const { select, update, insert } = require('../../../../bin/postgres-query-builder');
 const { pool } = require('../../../../lib/postgres/connection');
 const {
   INVALID_PAYLOAD,

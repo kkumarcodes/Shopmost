@@ -1,4 +1,4 @@
-const { del } = require('../../../../postgres-query-builder');
+const { del } = require('../../../../bin/postgres-query-builder');
 const { pool } = require('../../../../lib/postgres/connection');
 const {
   OK,
