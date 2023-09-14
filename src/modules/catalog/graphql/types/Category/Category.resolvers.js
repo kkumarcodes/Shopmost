@@ -3,7 +3,7 @@ const {
   node,
   execute,
   value
-} = require('../../../../../postgres-query-builder');
+} = require('../../../../../bin/postgres-query-builder');
 const uniqid = require('uniqid');
 const { buildUrl } = require('../../../../../lib/router/buildUrl');
 const { camelCase } = require('../../../../../lib/util/camelCase');

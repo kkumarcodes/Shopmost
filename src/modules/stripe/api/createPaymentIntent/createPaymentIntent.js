@@ -1,4 +1,4 @@
-const { select } = require('../../../../postgres-query-builder');
+const { select } = require('../../../../bin/postgres-query-builder');
 const smallestUnit = require('zero-decimal-currencies');
 const stripePayment = require('stripe');
 const { pool } = require('../../../../lib/postgres/connection');

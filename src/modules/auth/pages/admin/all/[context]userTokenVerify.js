@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
-const { select } = require('../../../../../postgres-query-builder');
+const { select } = require('../../../../../bin/postgres-query-builder');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');

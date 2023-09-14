@@ -1,5 +1,5 @@
 const { get } = require('../../../../../lib/util/get');
-const { select } = require('../../../../../postgres-query-builder');
+const { select } = require('../../../../../bin/postgres-query-builder');
 
 module.exports = {
   Query: {

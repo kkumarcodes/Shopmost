@@ -1,4 +1,4 @@
-const { select, insert } = require('../../../../postgres-query-builder');
+const { select, insert } = require('../../../../bin/postgres-query-builder');
 const { compareSync } = require('bcryptjs');
 const { sign } = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');

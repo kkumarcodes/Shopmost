@@ -5,7 +5,7 @@ const {
   del,
   select,
   insertOnUpdate
-} = require('../../../../postgres-query-builder');
+} = require('../../../../bin/postgres-query-builder');
 const { get } = require('../../../../lib/util/get');
 
 module.exports = async (request, response, delegate) => {

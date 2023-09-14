@@ -5,7 +5,7 @@ const {
   del,
   select,
   update
-} = require('../../../../postgres-query-builder');
+} = require('../../../../bin/postgres-query-builder');
 const { merge } = require('../../../../lib/util/merge');
 
 async function saveOptionValues(optionId, values, connection) {

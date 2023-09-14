@@ -6,7 +6,7 @@ const {
   select,
   update,
   startTransaction
-} = require('../../../../postgres-query-builder');
+} = require('../../../../bin/postgres-query-builder');
 const {
   getConnection,
   pool

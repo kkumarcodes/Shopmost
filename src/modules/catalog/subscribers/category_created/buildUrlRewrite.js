@@ -4,7 +4,7 @@ const {
   select,
   insert,
   insertOnUpdate
-} = require('../../../../postgres-query-builder');
+} = require('../../../../bin/postgres-query-builder');
 
 module.exports = async function buildUrlReWrite(data) {
   const categoryId = data.category_id;

@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-const { select } = require('../../../../../postgres-query-builder');
+const { select } = require('../../../../../bin/postgres-query-builder');
 const { buildUrl } = require('../../../../../lib/router/buildUrl');
 const { camelCase } = require('../../../../../lib/util/camelCase');
 

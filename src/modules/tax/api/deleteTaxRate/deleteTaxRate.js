@@ -5,7 +5,7 @@ const {
   startTransaction,
   select,
   del
-} = require('../../../../postgres-query-builder');
+} = require('../../../../bin/postgres-query-builder');
 const {
   getConnection
 } = require('../../../../lib/postgres/connection');

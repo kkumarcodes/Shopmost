@@ -1,4 +1,4 @@
-const { select, node, execute } = require('../../../postgres-query-builder');
+const { select, node, execute } = require('../../../bin/postgres-query-builder');
 const { getConfig } = require('../../../lib/util/getConfig');
 const { pool } = require('../../../lib/postgres/connection');
 

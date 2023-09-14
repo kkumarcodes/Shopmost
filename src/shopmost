@@ -18,15 +18,15 @@ process.on('unhandledRejection', (reason, p) => {
 try {
   if (command === 'build') {
     process.env.NODE_ENV = 'production';
-    require('./build/index');
+    require('./bin/build/index');
   } else if (command === 'dev') {
     process.env.NODE_ENV = 'development';
-    require('./dev');
+    require('./bin/dev');
   } else if (command === 'start') {
     process.env.NODE_ENV = 'production';
-    require('./start');
+    require('./bin/start');
   } else if (command === 'install') {
-    require('./install');
+    require('./bin/install');
   } else {
     throw new Error('Invalid command');
   }

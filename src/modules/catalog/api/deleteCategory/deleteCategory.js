@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const { del, select } = require('../../../../postgres-query-builder');
+const { del, select } = require('../../../../bin/postgres-query-builder');
 const { pool } = require('../../../../lib/postgres/connection');
 const {
   OK,
