@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const {
   createConfigClient
-} = require('../../../../lib/webpack/prod/createConfigClient');
+} = require('../../../lib/webpack/prod/createConfigClient');
 
 module.exports.buildClient = async function buildClient(routes) {
   const config = createConfigClient(routes);

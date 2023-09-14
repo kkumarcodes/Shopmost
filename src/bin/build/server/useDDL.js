@@ -2,17 +2,17 @@ const path = require('path');
 const { existsSync, rmdirSync } = require('fs');
 const { writeFile, mkdir } = require('fs').promises;
 const { inspect } = require('util');
-const { CONSTANTS } = require('../../lib/helpers');
-const { loadModules } = require('../serve/loadModules');
+const { CONSTANTS } = require('../../../lib/helpers');
+const { loadModules } = require('../../../lib/loadModules');
 const ora = require('ora');
 const { red, green } = require('kleur');
 const boxen = require('boxen');
-const { loadModuleRoutes } = require('../../serve/loadModuleRoutes');
-const { loadModuleComponents } = require('../../serve/loadModuleComponents');
-const { getRoutes } = require('../../../../lib/router/routes');
+const { loadModuleRoutes } = require('../../../lib/loadModuleRoutes');
+const { loadModuleComponents } = require('../../../lib/loadModuleComponents');
+const { getRoutes } = require('../../../lib/router/routes');
 const {
   getComponentsByRoute
-} = require('../../../../lib/componee/getComponentByRoute');
+} = require('../../../lib/componee/getComponentByRoute');
 const webpack = require('webpack');
 
 const modules = loadModules(path.resolve(__dirname, '../../../src', 'modules'));
