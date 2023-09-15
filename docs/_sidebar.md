@@ -6,6 +6,7 @@
     * [Installation guide](/getting-started/installation-guide.md)
 * [Knowledge Base](/knowledge-base/architecture-overview.md)
     * [Architecture Overview](/knowledge-base/architecture-overview.md)
+    * [Data Fetching](/knowledge-base/data-fetching.md)
 * [Module development](/module/module-overview.md)
     * [Module Overview](/module/module-overview.md)
 * [Theme development]()
