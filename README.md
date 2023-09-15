@@ -4,7 +4,7 @@
   <h1 align="center">ShopMost</h1>
 </p>
 <h4 align="center">
-    <a href="https://shopmost.io/docs/getting-started/introduction">Documentation</a> |
+    <a href="https://kkumarcodes.github.io/Shopmost/#/">Documentation</a> |
     <a href="https://demo.shopmost.io/">Demo</a>
 </h4>
 
