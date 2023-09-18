@@ -154,7 +154,7 @@ module.exports.createBaseConfig = function createBaseConfig(isServer) {
               // into invalid ecma 5 code. This is why the 'compress' and 'output'
               // sections only apply transformations that are ecma 5 safe
               // https://github.com/facebook/create-react-app/pull/4234
-              ecma: 2020
+              ecma: 2023
             },
             compress: false,
             mangle: {

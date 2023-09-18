@@ -113,7 +113,7 @@ export default function Layout() {
           </div>
           <div className="self-center">
             <div className="copyright text-center md:text-right text-textSubdued">
-              <span>Copyright © 2020 Shopmost</span>
+              <span>Copyright © 2023 Shopmost</span>
             </div>
           </div>
         </div>
