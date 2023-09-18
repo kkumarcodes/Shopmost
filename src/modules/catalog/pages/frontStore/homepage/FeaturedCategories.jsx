@@ -12,9 +12,7 @@ export default function FeaturedCategories() {
           <h3 className="h4 uppercase mt-1 mb-1">Men shoes collection</h3>
           <div className="mb-1">
             <p>
-              Constructed from luxury nylons, leathers, and custom hardware,
-              featuring sport details such as hidden breathing vents, waterproof
-              + antimicrobial linings, and more.
+            Discover our exclusive collection of high-quality men's shoes, featuring sophisticated styles to elevate any outfit. Crafted from premium leathers and designed for superior comfort, these shoes are made to last while providing effortless versatility.
             </p>
           </div>
           <Button url="/category/men" title="Shop men" variant="primary" />
@@ -26,9 +24,7 @@ export default function FeaturedCategories() {
           <h3 className="h4 uppercase mt-1 mb-1">Women shoes collection</h3>
           <div className="mb-1">
             <p>
-              Constructed from luxury nylons, leathers, and custom hardware,
-              featuring sport details such as hidden breathing vents, waterproof
-              + antimicrobial linings, and more.
+            Elevate your look with our exclusive collection of women's shoes, featuring elegant styles crafted from luxurious materials. Whether heading to the office or a night out, these shoes are designed to provide a perfect blend of sophistication, comfort, and versatility.
             </p>
           </div>
           <Button url="/category/women" title="Shop women" variant="primary" />
@@ -40,9 +36,7 @@ export default function FeaturedCategories() {
           <h3 className="h4 uppercase mt-1 mb-1">Kids shoes collection</h3>
           <div className="mb-1">
             <p>
-              Constructed from luxury nylons, leathers, and custom hardware,
-              featuring sport details such as hidden breathing vents, waterproof
-              + antimicrobial linings, and more.
+            Make sure your little ones step out in style with our collection of comfortable, durable kids' shoes. From first steps to first days of school, we have the perfect pair for every occasion.
             </p>
           </div>
           <Button url="/category/kids" title="Shop kids" variant="primary" />
