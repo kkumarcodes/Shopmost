@@ -245,14 +245,6 @@ module.exports = exports = async (connection) => {
     .given({
       attribute_id: color.insertId,
       attribute_code: 'color',
-      option_text: 'Orange'
-    })
-    .execute(connection);
-
-  await insert('attribute_option')
-    .given({
-      attribute_id: color.insertId,
-      attribute_code: 'color',
       option_text: 'Purple'
     })
     .execute(connection);
