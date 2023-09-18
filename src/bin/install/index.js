@@ -239,51 +239,51 @@ async function install() {
   const modules = [
     {
       name: 'auth',
-      resolve: path.resolve(__dirname, '../modules/auth')
+      resolve: path.resolve(__dirname, '../../modules/auth')
     },
     {
       name: 'base',
-      resolve: path.resolve(__dirname, '../modules/base')
+      resolve: path.resolve(__dirname, '../../modules/base')
     },
     {
       name: 'catalog',
-      resolve: path.resolve(__dirname, '../modules/catalog')
+      resolve: path.resolve(__dirname, '../../modules/catalog')
     },
     {
       name: 'checkout',
-      resolve: path.resolve(__dirname, '../modules/checkout')
+      resolve: path.resolve(__dirname, '../../modules/checkout')
     },
     {
       name: 'cms',
-      resolve: path.resolve(__dirname, '../modules/cms')
+      resolve: path.resolve(__dirname, '../../modules/cms')
     },
     {
       name: 'cod',
-      resolve: path.resolve(__dirname, '../modules/cod')
+      resolve: path.resolve(__dirname, '../../modules/cod')
     },
     {
       name: 'customer',
-      resolve: path.resolve(__dirname, '../modules/customer')
+      resolve: path.resolve(__dirname, '../../modules/customer')
     },
     {
       name: 'graphql',
-      resolve: path.resolve(__dirname, '../modules/graphql')
+      resolve: path.resolve(__dirname, '../../modules/graphql')
     },
     {
       name: 'paypal',
-      resolve: path.resolve(__dirname, '../modules/paypal')
+      resolve: path.resolve(__dirname, '../../modules/paypal')
     },
     {
       name: 'promotion',
-      resolve: path.resolve(__dirname, '../modules/promotion')
+      resolve: path.resolve(__dirname, '../../modules/promotion')
     },
     {
       name: 'setting',
-      resolve: path.resolve(__dirname, '../modules/setting')
+      resolve: path.resolve(__dirname, '../../modules/setting')
     },
     {
       name: 'stripe',
-      resolve: path.resolve(__dirname, '../modules/stripe')
+      resolve: path.resolve(__dirname, '../../modules/stripe')
     }
   ];
 
