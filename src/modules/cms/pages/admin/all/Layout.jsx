@@ -17,10 +17,10 @@ export default function AdminLayout() {
           <Area id="content" className="main-content-inner" />
           <div className="footer">
             <div className="copyright">
-              <span>Copyright © 2021 Shopmost</span>
+              <span>Copyright © 2023 Shopmost</span>
             </div>
             <div className="version">
-              <span>Version 1.0 dev</span>
+              <span>Version 1.0</span>
             </div>
           </div>
         </div>
