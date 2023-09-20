@@ -26,7 +26,11 @@
     padding: 4rem;
     -webkit-box-shadow: 6px 12px 60px rgb(0 0 0 / 20%);
     box-shadow: 6px 12px 60px rgb(0 0 0 / 20%);
-
+    a {
+      align-self: center;
+      color: var(--primary);
+      padding: 3px;
+    }
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
