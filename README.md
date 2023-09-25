@@ -1,4 +1,4 @@
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
 
 <p align="center">
   <h1 align="center">ShopMost</h1>
@@ -10,12 +10,6 @@
 
 <p align="center">
   <img src="https://github.com/nodeonline/nodejscart/actions/workflows/build.yml/badge.svg" alt="Github Action">
-  <a href="https://twitter.com/shopmostjs">
-    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/shopmostjs?style=social">
-  </a>
-  <a href="https://opensource.org/licenses/GPL-3.0">
-    <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License">
-  </a>
 </p>
 
 <p align="center">
@@ -24,14 +18,15 @@
 
 ## Introduction
 
-ShopMost is a GraphQL Based and React ecommerce platform with essential commerce features. Built with React, modular and fully customizable.
+ShopMost is a GraphQL Based and React ecommerce platform with essential commerce features. Built with React, modular and fully customizables.
 
 ## Quick Start
 
 You can get started with ShopMost in minutes by running the following command:
 
 ```bash
-npx create-shopmost-app my-app
+npm install
+npm run dev
 ```
 
 ## Documentation
@@ -86,7 +81,3 @@ If you add some more information such as your thoughts and vision about the feat
 ShopMost is an open-source project. We are committed to a fully transparent development process and appreciate highly any contributions. Whether you are helping us fix bugs, proposing new features, improving our documentation or spreading the word - we would love to have you as part of the ShopMost community.
 
 Please refer to our [Contribution Guidelines](./CONTRIBUTING.md) and [Code of Conduct](./CODE_OF_CONDUCT.md).
-
-## License
-
-[GPL-3.0 License](https://github.com/kkumarcodes/Shopmost/blob/main/LICENSE)
