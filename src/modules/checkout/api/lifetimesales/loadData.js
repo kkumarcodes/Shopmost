@@ -1,6 +1,6 @@
 const { select } = require('../../../../bin/postgres-query-builder');
 const { pool } = require('../../../../lib/postgres/connection');
-const { getSetting } = require('../../../setting/services/setting');
+const { getConfig } = require('../../../../lib/util/getConfig');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async function lifetimeSales(
@@ -35,8 +35,8 @@ module.exports = async function lifetimeSales(
       cancelled += 1;
     }
   });
-  const currency = await getSetting('storeCurrency', 'USD');
-  const language = await getSetting('storeLanguage', 'en');
+  const currency = getConfig('shop.currency', 'USD');
+  const language = getConfig('shop.language', 'en');
   const formatedTotal = new Intl.NumberFormat(language, {
     style: 'currency',
     currency
