@@ -14,7 +14,7 @@ const SearchQuery = `
         productId
         uuid
         sku
-        categories {
+        category {
           categoryId
         }
         name
@@ -124,9 +124,7 @@ function AddProducts({ addProductApi, categoryId, closeModal }) {
                       <div className="col-span-2 text-right">
                         {!(
                           addedProducts.includes(product.uuid) ||
-                          product.categories.find(
-                            (c) => c.categoryId === categoryId
-                          )
+                          product.category?.categoryId === categoryId
                         ) && (
                           <button
                             className="button secondary"
@@ -139,9 +137,7 @@ function AddProducts({ addProductApi, categoryId, closeModal }) {
                           </button>
                         )}
                         {(addedProducts.includes(product.uuid) ||
-                          product.categories.find(
-                            (c) => c.categoryId === categoryId
-                          )) && (
+                          product.category?.categoryId === categoryId) && (
                           <span className="button primary">
                             <CheckIcon width={20} height={20} />
                           </span>
