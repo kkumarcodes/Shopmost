@@ -83,7 +83,7 @@ export default function GrapseEditor({
           ]}
           onEditor={onEditor}
         >
-          <div className={`flex h-full border-t border-slate-500`}>
+          {/* <div className={`flex h-full border-t border-slate-500`}>
             <div className="gjs-column-m flex flex-col flex-grow">
               <Topbar className="min-h-[48px]" />
               <Canvas className="flex-grow gjs-custom-editor-canvas" />
@@ -112,7 +112,7 @@ export default function GrapseEditor({
                 />
               </Container>
             )}
-          </AssetsProvider>
+          </AssetsProvider> */}
         </GjsEditor>
       )}
 
