@@ -17,19 +17,6 @@ export default function StatusAndLayout({ cmsPage }) {
           value={cmsPage?.status}
         />
       </Card.Session>
-      <Card.Session title="Layout">
-        <Field
-          type="radio"
-          name="layout"
-          options={[
-            { value: 'oneColumn', text: 'One column' },
-            { value: 'twoColumnsLeft', text: 'Two columns left' },
-            { value: 'twoColumnsRight', text: 'Two columns right' },
-            { value: 'threeColumns', text: 'Three columns' }
-          ]}
-          value={cmsPage?.layout}
-        />
-      </Card.Session>
     </Card>
   );
 }
@@ -38,7 +25,6 @@ StatusAndLayout.propTypes = {
   cmsPage: PropTypes.shape({
     status: PropTypes.number,
     includeInNave: PropTypes.number,
-    layout: PropTypes.string.isRequired
   })
 };
 
@@ -55,7 +41,6 @@ export const query = `
   query Query {
     cmsPage(id: getContextValue("cmsPageId", null)) {
       status
-      layout
     }
   }
 `;

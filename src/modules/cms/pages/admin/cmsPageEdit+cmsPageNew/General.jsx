@@ -3,9 +3,7 @@ import React from 'react';
 import Area from '@components/common/Area';
 import { get } from '../../../../../lib/util/get';
 import { Field } from '@components/common/form/Field';
-import { TextArea } from '@components/common/form/fields/Textarea';
-import { Card } from '@components/admin/cms/Card';
-import CkeditorField from '@components/common/form/fields/Ckeditor';
+import GrapseEditor from '@components/common/form/fields/GrapseEditor';
 
 export default function General({
   page,
@@ -25,7 +23,7 @@ export default function General({
         placeholder: 'Name',
         validationRules: ['notEmpty']
       },
-      sortOrder: 10
+      sortOrder: 20
     },
     {
       component: { default: Field },
@@ -34,20 +32,20 @@ export default function General({
         name: 'cms_page_id',
         type: 'hidden'
       },
-      sortOrder: 10
+      sortOrder: 30
     },
     {
-      component: { default: CkeditorField },
+      component: { default: GrapseEditor },
       props: {
         id: 'content',
         name: 'content',
-        label: 'Content',
+        label: '',
         browserApi,
         deleteApi,
         uploadApi,
         folderCreateApi
       },
-      sortOrder: 30
+      sortOrder: 10
     }
   ].filter((f) => {
     // eslint-disable-next-line no-param-reassign
@@ -58,11 +56,7 @@ export default function General({
   });
 
   return (
-    <Card title="General">
-      <Card.Session>
-        <Area id="pageEditGeneral" coreComponents={fields} />
-      </Card.Session>
-    </Card>
+    <Area id="pageEditGeneral" coreComponents={fields} />
   );
 }
 
