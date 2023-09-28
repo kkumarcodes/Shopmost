@@ -30,7 +30,6 @@ module.exports.parseGraphqlByFile = function parseGraphqlByFile(module) {
     // or 'getContextValue("key", defaultValue)'
     // or 'getContextValue('x', defaultValue)'
     // to 'getContextValue_`base64 encoded of key and defaultValue`'`)'
-    // to avoid conflict with graphql-tag
     queryBody = queryBody.replace(
       /getContextValue\(([^)]+)\)/g,
       (match, p1) => {
@@ -185,7 +184,6 @@ module.exports.parseGraphqlByFile = function parseGraphqlByFile(module) {
     // or 'getContextValue("key", defaultValue)'
     // or 'getContextValue('x', defaultValue)'
     // to 'getContextValue_`base64 encoded of key and defaultValue`'`)'
-    // to avoid conflict with graphql-tag
     variablesBody = variablesBody.replace(
       /getContextValue\(([^)]+)\)/g,
       (match, p1) => {
