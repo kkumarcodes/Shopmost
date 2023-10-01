@@ -9,7 +9,7 @@ const { getTailwindConfig } = require('../util/getTailwindConfig');
 
 /* eslint-disable no-multi-assign */
 /* eslint-disable global-require */
-module.exports = exports = function TailwindLoader(c) {
+module.exports = exports = async function TailwindLoader(c) {
   this.cacheable(false);
   if (this.mode === 'production') {
     if (this.resourcePath.includes('tailwind.scss')) {
@@ -42,7 +42,7 @@ module.exports = exports = function TailwindLoader(c) {
   ];
   // Postcss with tailwind plugin
   try {
-    const tailwindCssResult = postcss([
+    const tailwindCssResult = await postcss([
       tailwindcss(mergedTailwindConfig),
       autoprefixer
     ]).process(c);
