@@ -11,7 +11,7 @@ export default function FormContent({ gridUrl }) {
     <>
       <div className="page-editor">
         <Area id="leftSide" noOuter />
-        <div className="form-submit-button flex border-t border-divider mt-15 pt-15 justify-between">
+        <div className="form-submit-button flex border-t border-divider mt-15 p-2 justify-between">
           <Button
             title="Cancel"
             variant="critical"
