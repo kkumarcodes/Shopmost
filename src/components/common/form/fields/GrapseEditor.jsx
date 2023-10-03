@@ -3,15 +3,7 @@
 /* eslint-disable no-param-reassign */
 import PropTypes from 'prop-types';
 import React from 'react';
-import GjsEditor, {
-  AssetsProvider,
-  Canvas,
-  ModalProvider,
-} from '@grapesjs/react';
-import CustomModal from '@components/common/grapse/CustomModal';
-import CustomAssetManager from '@components/common/grapse/CustomAssetManager';
-import Topbar from '@components/common/grapse/Topbar';
-import RightSidebar from '@components/common/grapse/RightSidebar';
+import GjsEditor from '@grapesjs/react';
 
 import './GrapseEditor.scss';
 
@@ -31,7 +23,7 @@ const gjsOptions = {
     pages: [
       {
         name: 'Home page',
-        component: `<h1>GrapesJS React Custom UI</h1>`,
+        component: `<h1>Custom Page UI</h1>`,
       },
     ],
   },
@@ -51,25 +43,11 @@ export default function GrapseEditor({
   uploadApi,
   folderCreateApi
 }) {
-  const editorRef = React.useRef();
-  const [editorLoaded, setEditorLoaded] = React.useState(false);
-  const [fileBrowser, setFileBrowser] = React.useState(false);
-  const [editor, setEditor] = React.useState(null);
-  const { CKEditor, ClassicEditor } = editorRef.current || {};
   const [editorData, setEditorData] = React.useState(value);
-
-  React.useEffect(() => {
-    editorRef.current = {
-      CKEditor: require('@ckeditor/ckeditor5-react').CKEditor,
-      ClassicEditor: require('@ckeditor/ckeditor5-build-classic')
-    };
-    setEditorLoaded(true);
-  }, []);
-
   return (
     <div className="grapseeditor">
       <input type={'hidden'} name={name} value={editorData} />
-      {editorLoaded && (
+      {(
         <GjsEditor
           className="gjs-custom-editor text-white bg-slate-900"
           grapesjs="https://unpkg.com/grapesjs"
@@ -83,36 +61,6 @@ export default function GrapseEditor({
           ]}
           onEditor={onEditor}
         >
-          {/* <div className={`flex h-full border-t border-slate-500`}>
-            <div className="gjs-column-m flex flex-col flex-grow">
-              <Topbar className="min-h-[48px]" />
-              <Canvas className="flex-grow gjs-custom-editor-canvas" />
-            </div>
-            <RightSidebar
-              className={`gjs-column-r w-[300px] border-l border-slate-500`}
-            />
-          </div>
-          <ModalProvider>
-            {({ open, title, content, close }) => (
-              <CustomModal
-                open={open}
-                title={title}
-                children={content}
-                close={close}
-              />
-            )}
-          </ModalProvider>
-          <AssetsProvider>
-            {({ assets, select, close, Container }) => (
-              <Container>
-                <CustomAssetManager
-                  assets={assets}
-                  select={select}
-                  close={close}
-                />
-              </Container>
-            )}
-          </AssetsProvider> */}
         </GjsEditor>
       )}
 
