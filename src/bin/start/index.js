@@ -1,4 +1,4 @@
-const { start } = require('../../lib/startUp');
+const { start } = require('@lib/startUp');
 
 (async () => {
   await start();

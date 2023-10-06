@@ -1,5 +1,5 @@
-const { getConfig } = require('../../../../lib/util/getConfig');
-const { UNAUTHORIZED } = require('../../../../lib/util/httpStatus');
+const { getConfig } = require('@lib/util/getConfig');
+const { UNAUTHORIZED } = require('@lib/util/httpStatus');
 const { getContextValue } = require('../../../graphql/services/contextHelper');
 
 module.exports = (request, response, delegate, next) => {

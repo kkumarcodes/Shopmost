@@ -13,7 +13,7 @@ const {
   rollback
 } = require('../postgres-query-builder');
 const { prompt } = require('enquirer');
-const { CONSTANTS } = require('../../lib/helpers');
+const { CONSTANTS } = require('@lib/helpers');
 const { migrate } = require('./migrate');
 const { createMigrationTable } = require('./createMigrationTable');
 

@@ -1,16 +1,16 @@
 const { existsSync, rmSync, mkdirSync } = require('fs');
 const path = require('path');
-const { CONSTANTS } = require('../../lib/helpers');
+const { CONSTANTS } = require('@lib/helpers');
 const {
   loadModuleRoutes
-} = require('../../lib/router/loadModuleRoutes');
-const { getRoutes } = require('../../lib/router/Router');
+} = require('@lib/router/loadModuleRoutes');
+const { getRoutes } = require('@lib/router/Router');
 const {
   isBuildRequired
-} = require('../../lib/webpack/isBuildRequired');
+} = require('@lib/webpack/isBuildRequired');
 const { getEnabledExtensions } = require('../../extension');
-const { buildEntry } = require('../../lib/buildEntry');
-const { getCoreModules } = require('../../lib/loadModules');
+const { buildEntry } = require('@lib/buildEntry');
+const { getCoreModules } = require('@lib/loadModules');
 const { compile } = require('./complie');
 
 /* Loading modules and initilize routes, components */

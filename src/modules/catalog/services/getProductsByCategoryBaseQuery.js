@@ -1,6 +1,6 @@
 const { select, node, execute } = require('../../../bin/postgres-query-builder');
-const { getConfig } = require('../../../lib/util/getConfig');
-const { pool } = require('../../../lib/postgres/connection');
+const { getConfig } = require('@lib/util/getConfig');
+const { pool } = require('@lib/postgres/connection');
 
 module.exports.getProductsByCategoryBaseQuery = async (
   categoryId,

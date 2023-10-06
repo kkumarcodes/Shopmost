@@ -3,18 +3,18 @@ const {
   node,
   execute,
   value
-} = require('../../../../../bin/postgres-query-builder');
+} = require('@bin/postgres-query-builder');
 const uniqid = require('uniqid');
-const { buildUrl } = require('../../../../../lib/router/buildUrl');
-const { camelCase } = require('../../../../../lib/util/camelCase');
+const { buildUrl } = require('@lib/router/buildUrl');
+const { camelCase } = require('@lib/util/camelCase');
 const {
   getProductsByCategoryBaseQuery
 } = require('../../../services/getProductsByCategoryBaseQuery');
-const { pool } = require('../../../../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 const {
   getFilterableAttributes
 } = require('../../../services/getFilterableAttributes');
-const { getConfig } = require('../../../../../lib/util/getConfig');
+const { getConfig } = require('@lib/util/getConfig');
 
 module.exports = {
   Query: {

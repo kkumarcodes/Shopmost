@@ -3,7 +3,7 @@ import React from 'react';
 import { toast } from 'react-toastify';
 import Button from '@components/common/form/Button';
 import { useFormDispatch } from '@components/common/form/Form';
-import { serializeForm } from '../../../../../lib/util/formToJson';
+import { serializeForm } from '@lib/util/formToJson';
 
 export function SubmitButton({
   productId,

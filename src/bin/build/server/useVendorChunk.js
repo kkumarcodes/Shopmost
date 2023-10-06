@@ -1,17 +1,17 @@
 const path = require('path');
 const { existsSync, rmSync } = require('fs');
-const { CONSTANTS } = require('../../../lib/helpers');
+const { CONSTANTS } = require('@lib/helpers');
 const { loadModules } = require('../../serve/loadModules');
 const ora = require('ora');
 const { red, green } = require('kleur');
 const boxen = require('boxen');
 const { loadModuleRoutes } = require('../../serve/loadModuleRoutes');
 const { loadModuleComponents } = require('../../serve/loadModuleComponents');
-const { getRoutes } = require('../../lib/router/routes');
+const { getRoutes } = require('@lib/router/routes');
 const webpack = require('webpack');
 const {
   createConfig
-} = require('../../lib/webpack/createConfig');
+} = require('@lib/webpack/createConfig');
 const { createComponents } = require('../createComponents');
 
 (async () => {

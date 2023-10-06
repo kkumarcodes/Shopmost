@@ -1,13 +1,13 @@
-const { select, update, insert } = require('../../../../bin/postgres-query-builder');
+const { select, update, insert } = require('@bin/postgres-query-builder');
 const { default: axios } = require('axios');
-const { pool } = require('../../../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 const { getContextValue } = require('../../../graphql/services/contextHelper');
 const { getApiBaseUrl } = require('../../services/getApiBaseUrl');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('../../../../lib/util/httpStatus');
+} = require('@lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

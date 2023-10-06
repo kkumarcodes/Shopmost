@@ -3,7 +3,7 @@ import React from 'react';
 import { Field } from '@components/common/form/Field';
 import { Form } from '@components/common/form/Form';
 import './LoginForm.scss';
-import { _ } from '../../../../../lib/locale/translate';
+import { _ } from '@lib/locale/translate';
 import Button from '@components/common/form/Button';
 
 export default function LoginForm({ action, homeUrl, registerUrl }) {

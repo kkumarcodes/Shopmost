@@ -1,5 +1,5 @@
-const { select, update } = require('../../../../../bin/postgres-query-builder');
-const { pool } = require('../../../../../lib/postgres/connection');
+const { select, update } = require('@bin/postgres-query-builder');
+const { pool } = require('@lib/postgres/connection');
 const {
   getContextValue,
   setContextValue

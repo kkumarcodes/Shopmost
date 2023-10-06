@@ -1,8 +1,8 @@
-const { update, select } = require('../../../../bin/postgres-query-builder');
-const { pool } = require('../../../../lib/postgres/connection');
+const { update, select } = require('@bin/postgres-query-builder');
+const { pool } = require('@lib/postgres/connection');
 const {
   INVALID_PAYLOAD
-} = require('../../../../lib/util/httpStatus');
+} = require('@lib/util/httpStatus');
 
 module.exports = async (request, response, delegate) => {
   const connection = await delegate.getConnection;

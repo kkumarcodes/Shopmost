@@ -1,9 +1,9 @@
-const { select } = require('../../../../bin/postgres-query-builder');
+const { select } = require('@bin/postgres-query-builder');
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
-const { pool } = require('../../../../lib/postgres/connection');
-const { get } = require('../../../../lib/util/get');
-const { UNAUTHORIZED } = require('../../../../lib/util/httpStatus');
+const { pool } = require('@lib/postgres/connection');
+const { get } = require('@lib/util/get');
+const { UNAUTHORIZED } = require('@lib/util/httpStatus');
 const { setContextValue } = require('../../../graphql/services/contextHelper');
 const { generateToken } = require('../../services/generateToken');
 const {

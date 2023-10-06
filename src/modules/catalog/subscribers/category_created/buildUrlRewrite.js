@@ -1,10 +1,10 @@
-const { pool } = require('../../../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 const {
   execute,
   select,
   insert,
   insertOnUpdate
-} = require('../../../../bin/postgres-query-builder');
+} = require('@bin/postgres-query-builder');
 
 module.exports = async function buildUrlReWrite(data) {
   const categoryId = data.category_id;

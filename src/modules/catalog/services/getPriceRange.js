@@ -1,5 +1,5 @@
 const { select } = require('../../../bin/postgres-query-builder');
-const { pool } = require('../../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 const {
   getProductsByCategoryBaseQuery
 } = require('./getProductsByCategoryBaseQuery');

@@ -1,17 +1,17 @@
 /* eslint-disable camelcase */
 const { default: axios } = require('axios');
-const { select, update } = require('../../../../bin/postgres-query-builder');
+const { select, update } = require('@bin/postgres-query-builder');
 const { getContextValue } = require('../../../graphql/services/contextHelper');
 const { getSetting } = require('../../../setting/services/setting');
 const { toPrice } = require('../../../checkout/services/toPrice');
-const { buildUrl } = require('../../../../lib/router/buildUrl');
-const { pool } = require('../../../../lib/postgres/connection');
+const { buildUrl } = require('@lib/router/buildUrl');
+const { pool } = require('@lib/postgres/connection');
 const { getApiBaseUrl } = require('../../services/getApiBaseUrl');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('../../../../lib/util/httpStatus');
+} = require('@lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, stack, next) => {

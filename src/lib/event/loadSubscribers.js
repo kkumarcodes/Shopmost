@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs');
-const { getCoreModules } = require('../../lib/loadModules');
+const { getCoreModules } = require('@lib/loadModules');
 const { getEnabledExtensions } = require('../../extension');
-const { debug } = require('../../lib/log/debuger');
+const { debug } = require('@lib/log/debuger');
 
 function loadModuleSubscribers(modulePath) {
   const subscribers = [];

@@ -1,5 +1,5 @@
-const { pool } = require('../../../../lib/postgres/connection');
-const { select, insertOnUpdate } = require('../../../../bin/postgres-query-builder');
+const { pool } = require('@lib/postgres/connection');
+const { select, insertOnUpdate } = require('@bin/postgres-query-builder');
 
 module.exports = async function buildUrlReWrite(data) {
   const productId = data.product_id;

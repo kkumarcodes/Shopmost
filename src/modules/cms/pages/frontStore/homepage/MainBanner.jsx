@@ -1,5 +1,5 @@
 import React from 'react';
-import { _ } from '../../../../../lib/locale/translate';
+import { _ } from '@lib/locale/translate';
 import './MainBanner.scss';
 
 export default function MainBanner() {

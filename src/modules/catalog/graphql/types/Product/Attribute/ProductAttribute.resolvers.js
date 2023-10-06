@@ -1,5 +1,5 @@
 const { select } = require('../../../../../../bin/postgres-query-builder');
-const { camelCase } = require('../../../../../../lib/util/camelCase');
+const { camelCase } = require('@lib/util/camelCase');
 
 module.exports = {
   Product: {

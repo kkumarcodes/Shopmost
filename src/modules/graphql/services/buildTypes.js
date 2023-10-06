@@ -1,7 +1,7 @@
 const path = require('path');
 const { loadFilesSync } = require('@graphql-tools/load-files');
 const { mergeTypeDefs } = require('@graphql-tools/merge');
-const { CONSTANTS } = require('../../../lib/helpers');
+const { CONSTANTS } = require('@lib/helpers');
 const { getEnabledExtensions } = require('../../../extension');
 
 module.exports.buildTypeDefs = function buildTypeDefs() {

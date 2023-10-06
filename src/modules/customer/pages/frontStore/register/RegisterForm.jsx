@@ -3,7 +3,7 @@ import React from 'react';
 import { Field } from '@components/common/form/Field';
 import { Form } from '@components/common/form/Form';
 import './RegisterForm.scss';
-import { _ } from '../../../../../lib/locale/translate';
+import { _ } from '@lib/locale/translate';
 
 export default function RegisterForm({ action, homeUrl, loginApi, loginUrl }) {
   const [error, setError] = React.useState(null);

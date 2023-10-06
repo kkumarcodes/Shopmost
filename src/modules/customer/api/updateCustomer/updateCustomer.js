@@ -1,14 +1,14 @@
-const { update, select } = require('../../../../bin/postgres-query-builder');
+const { update, select } = require('@bin/postgres-query-builder');
 const bcrypt = require('bcryptjs');
 const {
   getConnection
-} = require('../../../../lib/postgres/connection');
-const { buildUrl } = require('../../../../lib/router/buildUrl');
+} = require('@lib/postgres/connection');
+const { buildUrl } = require('@lib/router/buildUrl');
 const {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} = require('../../../../lib/util/httpStatus');
+} = require('@lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

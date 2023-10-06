@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
-const { select } = require('../../../../../bin/postgres-query-builder');
-const { buildUrl } = require('../../../../../lib/router/buildUrl');
-const { camelCase } = require('../../../../../lib/util/camelCase');
+const { select } = require('@bin/postgres-query-builder');
+const { buildUrl } = require('@lib/router/buildUrl');
+const { camelCase } = require('@lib/util/camelCase');
 
 module.exports = {
   Query: {

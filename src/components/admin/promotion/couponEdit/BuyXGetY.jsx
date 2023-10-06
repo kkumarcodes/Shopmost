@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import PubSub from 'pubsub-js';
 import { Field } from '@components/common/form/Field';
-import { FORM_FIELD_UPDATED } from '../../../../lib/util/events';
+import { FORM_FIELD_UPDATED } from '@lib/util/events';
 
 export function BuyXGetY({ requireProducts, discountType }) {
   const [products, setProducts] = React.useState(requireProducts);

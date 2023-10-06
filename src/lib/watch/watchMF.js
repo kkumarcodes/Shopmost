@@ -1,5 +1,5 @@
 const { normalize, basename } = require('path');
-const { Handler } = require('../../lib/middleware/Handler');
+const { Handler } = require('@lib/middleware/Handler');
 const { broadcash } = require('./broadcash');
 
 module.exports.watchMF = function (event, path) {

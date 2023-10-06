@@ -1,6 +1,6 @@
 const chokidar = require('chokidar');
 const { resolve } = require('path');
-const { CONSTANTS } = require('../../lib/helpers');
+const { CONSTANTS } = require('@lib/helpers');
 const { broadcash } = require('./broadcash');
 
 function refreshable() {

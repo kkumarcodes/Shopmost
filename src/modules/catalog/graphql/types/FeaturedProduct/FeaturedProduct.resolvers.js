@@ -1,6 +1,6 @@
-const { select, node } = require('../../../../../bin/postgres-query-builder');
-const { camelCase } = require('../../../../../lib/util/camelCase');
-const { getConfig } = require('../../../../../lib/util/getConfig');
+const { select, node } = require('@bin/postgres-query-builder');
+const { camelCase } = require('@lib/util/camelCase');
+const { getConfig } = require('@lib/util/getConfig');
 
 module.exports = {
   Query: {

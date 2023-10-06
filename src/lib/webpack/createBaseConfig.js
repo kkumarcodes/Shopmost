@@ -111,6 +111,9 @@ module.exports.createBaseConfig = function createBaseConfig(isServer) {
 
   // Resolve aliases
   const alias = {};
+  alias['@lib'] = [
+    path.resolve(CONSTANTS.LIBPATH)
+  ];
   if (theme) {
     alias['@components'] = [
       path.resolve(CONSTANTS.THEMEPATH, theme, 'components')

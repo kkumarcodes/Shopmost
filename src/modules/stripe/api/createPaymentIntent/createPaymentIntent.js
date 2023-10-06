@@ -1,13 +1,13 @@
-const { select } = require('../../../../bin/postgres-query-builder');
+const { select } = require('@bin/postgres-query-builder');
 const smallestUnit = require('zero-decimal-currencies');
 const stripePayment = require('stripe');
-const { pool } = require('../../../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 const { getSetting } = require('../../../setting/services/setting');
-const { getConfig } = require('../../../../lib/util/getConfig');
+const { getConfig } = require('@lib/util/getConfig');
 const {
   OK,
   INVALID_PAYLOAD
-} = require('../../../../lib/util/httpStatus');
+} = require('@lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {
