@@ -30,9 +30,7 @@ export default function Notification() {
   }, []);
 
   return (
-    <div>
-      <ToastContainer hideProgressBar autoClose={false} />
-    </div>
+    <ToastContainer hideProgressBar autoClose={false} />
   );
 }
 
