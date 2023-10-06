@@ -52,10 +52,10 @@ input[type='radio'] {
   }
   &:checked {
     & + .radio-checked {
-      border-color: var(--interactive);
+      border-color: var(--primary);
       span {
         align-self: center;
-        background-color: var(--interactive);
+        background-color: var(--primary);
         display: inline-block;
         border-radius: 100%;
         width: 1.1rem;
@@ -85,7 +85,7 @@ input[type='checkbox'] {
   &:checked {
     & + .checkbox-checked {
       border: 0;
-      background-color: var(--interactive);
+      background-color: var(--primary);
       svg {
         fill: white;
         color: white;
