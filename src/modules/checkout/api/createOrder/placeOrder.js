@@ -1,11 +1,11 @@
 /* eslint-disable camelcase */
-const { select } = require('../../../../bin/postgres-query-builder');
-const { pool } = require('../../../../lib/postgres/connection');
-const { buildUrl } = require('../../../../lib/router/buildUrl');
+const { select } = require('@bin/postgres-query-builder');
+const { pool } = require('@lib/postgres/connection');
+const { buildUrl } = require('@lib/router/buildUrl');
 const {
   INVALID_PAYLOAD,
   INTERNAL_SERVER_ERROR
-} = require('../../../../lib/util/httpStatus');
+} = require('@lib/util/httpStatus');
 const { getCartByUUID } = require('../../services/getCartByUUID');
 const { createOrder } = require('../../services/orderCreator');
 

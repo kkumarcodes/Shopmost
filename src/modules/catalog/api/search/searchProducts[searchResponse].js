@@ -1,7 +1,7 @@
-const { select } = require('../../../../bin/postgres-query-builder');
-const { pool } = require('../../../../lib/postgres/connection');
-const { buildUrl } = require('../../../../lib/router/buildUrl');
-const { assign } = require('../../../../lib/util/assign');
+const { select } = require('@bin/postgres-query-builder');
+const { pool } = require('@lib/postgres/connection');
+const { buildUrl } = require('@lib/router/buildUrl');
+const { assign } = require('@lib/util/assign');
 
 module.exports = async (request, response) => {
   const { keyword } = request.query;

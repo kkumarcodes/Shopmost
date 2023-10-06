@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 const { select } = require('../../../bin/postgres-query-builder');
-const { pool } = require('../../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 const { Cart } = require('./cart/Cart');
 
 module.exports = exports;

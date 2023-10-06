@@ -1,18 +1,18 @@
 const {
   getConnection
-} = require('../../../../lib/postgres/connection');
+} = require('@lib/postgres/connection');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('../../../../lib/util/httpStatus');
+} = require('@lib/util/httpStatus');
 const {
   insert,
   startTransaction,
   rollback,
   commit,
   select
-} = require('../../../../bin/postgres-query-builder');
+} = require('@bin/postgres-query-builder');
 
 module.exports = async (request, response, delegate, next) => {
   const { category_id } = request.params;

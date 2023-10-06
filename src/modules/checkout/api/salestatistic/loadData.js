@@ -1,6 +1,6 @@
-const { select } = require('../../../../bin/postgres-query-builder');
+const { select } = require('@bin/postgres-query-builder');
 const dayjs = require('dayjs');
-const { pool } = require('../../../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, stack, next) => {

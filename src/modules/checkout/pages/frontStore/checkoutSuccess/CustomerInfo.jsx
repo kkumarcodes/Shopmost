@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Button from '@components/common/form/Button';
 import { AddressSummary } from '@components/frontStore/customer/address/AddressSummary';
-import { _ } from '../../../../../lib/locale/translate';
+import { _ } from '@lib/locale/translate';
 
 export default function CustomerInfo({
   order: {

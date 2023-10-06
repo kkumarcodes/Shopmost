@@ -1,10 +1,10 @@
 /* eslint-disable global-require */
 /* eslint-disable guard-for-in */
 /* eslint-disable import/no-import-module-exports */
-const isErrorHandlerTriggered = require('../../../../lib/middleware/isErrorHandlerTriggered');
-const { render } = require('../../../../lib/response/render');
-const { get } = require('../../../../lib/util/get');
-const isDevelopmentMode = require('../../../../lib/util/isDevelopmentMode');
+const isErrorHandlerTriggered = require('@lib/middleware/isErrorHandlerTriggered');
+const { render } = require('@lib/response/render');
+const { get } = require('@lib/util/get');
+const isDevelopmentMode = require('@lib/util/isDevelopmentMode');
 
 module.exports = async (request, response, delegate, next) => {
   /** Get all promise delegate */

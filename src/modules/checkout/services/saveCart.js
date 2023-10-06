@@ -10,7 +10,7 @@ const {
 const {
   pool,
   getConnection
-} = require('../../../lib/postgres/connection');
+} = require('@lib/postgres/connection');
 
 module.exports = exports;
 

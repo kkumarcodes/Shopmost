@@ -8,7 +8,7 @@ const {
   update
 } = require('../../../bin/postgres-query-builder');
 const { v4: uuidv4 } = require('uuid');
-const { pool } = require('../../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 
 /* Default validation rules */
 let validationServices = [

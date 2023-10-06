@@ -12,7 +12,7 @@ const {
 } = require('./webpack/isBuildRequired');
 const publicStatic = require('./middlewares/publicStatic');
 const themePublicStatic = require('./middlewares/themePublicStatic');
-const { select } = require('../bin/postgres-query-builder');
+const { select } = require('@bin/postgres-query-builder');
 const { pool } = require('./postgres/connection');
 const {
   setContextValue

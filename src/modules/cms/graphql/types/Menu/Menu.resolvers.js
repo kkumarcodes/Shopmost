@@ -1,5 +1,5 @@
-const { select, value } = require('../../../../../bin/postgres-query-builder');
-const { buildUrl } = require('../../../../../lib/router/buildUrl');
+const { select, value } = require('@bin/postgres-query-builder');
+const { buildUrl } = require('@lib/router/buildUrl');
 
 module.exports = {
   Query: {

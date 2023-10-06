@@ -1,7 +1,7 @@
 const { select } = require('../../../../../../bin/postgres-query-builder');
 const uniqid = require('uniqid');
-const { buildUrl } = require('../../../../../../lib/router/buildUrl');
-const { camelCase } = require('../../../../../../lib/util/camelCase');
+const { buildUrl } = require('@lib/router/buildUrl');
+const { camelCase } = require('@lib/util/camelCase');
 
 module.exports = {
   Product: {

@@ -10,7 +10,7 @@ import { BillingAddress } from '@components/frontStore/checkout/checkout/payment
 import { useCheckout } from '@components/common/context/checkout';
 import { Field } from '@components/common/form/Field';
 import Button from '@components/common/form/Button';
-import { _ } from '../../../../../../lib/locale/translate';
+import { _ } from '@lib/locale/translate';
 
 const QUERY = `
   query Query($cartId: String) {

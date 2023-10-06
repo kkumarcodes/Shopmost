@@ -1,5 +1,5 @@
-const { pool } = require('../../../../lib/postgres/connection');
-const { execute, select } = require('../../../../bin/postgres-query-builder');
+const { pool } = require('@lib/postgres/connection');
+const { execute, select } = require('@bin/postgres-query-builder');
 
 module.exports = async function deleteUrlReWrite(data) {
   try {

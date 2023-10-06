@@ -11,7 +11,7 @@ const {
 const {
   pool,
   getConnection
-} = require('../../lib/postgres/connection');
+} = require('@lib/postgres/connection');
 const { existsSync, readdirSync } = require('fs');
 
 async function getCurrentInstalledVersion(module) {

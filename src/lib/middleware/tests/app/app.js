@@ -4,7 +4,7 @@
 const path = require('path');
 const {
   addDefaultMiddlewareFuncs
-} = require('../../../../lib/addDefaultMiddlewareFuncs');
+} = require('@lib/addDefaultMiddlewareFuncs');
 const express = require('express');
 const {
   loadModuleRoutes

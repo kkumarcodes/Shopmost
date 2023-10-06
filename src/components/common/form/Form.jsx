@@ -2,12 +2,12 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import PubSub from 'pubsub-js';
-import { get } from '../../../lib/util/get';
+import { get } from '@lib/util/get';
 import {
   FORM_SUBMIT,
   FORM_VALIDATED
-} from '../../../lib/util/events';
-import { serializeForm } from '../../../lib/util/formToJson';
+} from '@lib/util/events';
+import { serializeForm } from '@lib/util/formToJson';
 import Button from '@components/common/form/Button';
 import { validator } from './validator';
 

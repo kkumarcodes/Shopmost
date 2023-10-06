@@ -1,9 +1,9 @@
-const { pool } = require('../../../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 const {
   execute,
   insertOnUpdate,
   select
-} = require('../../../../bin/postgres-query-builder');
+} = require('@bin/postgres-query-builder');
 
 module.exports = async function buildUrlReWrite(data) {
   try {

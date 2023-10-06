@@ -1,7 +1,7 @@
-const { select } = require('../../../../../bin/postgres-query-builder');
-const { pool } = require('../../../../../lib/postgres/connection');
-const { camelCase } = require('../../../../../lib/util/camelCase');
-const { buildUrl } = require('../../../../../lib/router/buildUrl');
+const { select } = require('@bin/postgres-query-builder');
+const { pool } = require('@lib/postgres/connection');
+const { camelCase } = require('@lib/util/camelCase');
+const { buildUrl } = require('@lib/router/buildUrl');
 
 module.exports = {
   Query: {

@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-const { del, select } = require('../../../../bin/postgres-query-builder');
-const { pool } = require('../../../../lib/postgres/connection');
+const { del, select } = require('@bin/postgres-query-builder');
+const { pool } = require('@lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} = require('../../../../lib/util/httpStatus');
+} = require('@lib/util/httpStatus');
 
 module.exports = async (request, response, delegate, next) => {
   try {

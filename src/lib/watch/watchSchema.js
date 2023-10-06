@@ -1,5 +1,5 @@
 const { normalize, resolve } = require('path');
-const { CONSTANTS } = require('../../lib/helpers');
+const { CONSTANTS } = require('@lib/helpers');
 const { broadcash } = require('./broadcash');
 
 module.exports.watchSchema = function (event, path) {

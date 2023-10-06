@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { select } = require('../../../../../../bin/postgres-query-builder');
 const uniqid = require('uniqid');
-const { CONSTANTS } = require('../../../../../../lib/helpers');
-const { getConfig } = require('../../../../../../lib/util/getConfig');
+const { CONSTANTS } = require('@lib/helpers');
+const { getConfig } = require('@lib/util/getConfig');
 
 function getUrls(image) {
   const thumbVersion = image.replace(/.([^.]*)$/, '-thumb.$1');

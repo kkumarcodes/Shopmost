@@ -2,14 +2,14 @@ const {
   insertOnUpdate,
   commit,
   rollback
-} = require('../../../../bin/postgres-query-builder');
+} = require('@bin/postgres-query-builder');
 const {
   getConnection
-} = require('../../../../lib/postgres/connection');
+} = require('@lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR
-} = require('../../../../lib/util/httpStatus');
+} = require('@lib/util/httpStatus');
 const { refreshSetting } = require('../../services/setting');
 
 // eslint-disable-next-line no-unused-vars

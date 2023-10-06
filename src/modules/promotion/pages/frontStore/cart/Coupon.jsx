@@ -5,7 +5,7 @@ import { Field } from '@components/common/form/Field';
 import { Form } from '@components/common/form/Form';
 import Button from '@components/common/form/Button';
 import { useAppDispatch } from '@components/common/context/app';
-import { _ } from '../../../../../lib/locale/translate';
+import { _ } from '@lib/locale/translate';
 
 export default function CouponForm({ cart: { applyCouponApi } }) {
   const AppContextDispatch = useAppDispatch();

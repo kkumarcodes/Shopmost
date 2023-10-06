@@ -4,7 +4,7 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { get } from '../../../../lib/util/get';
+import { get } from '@lib/util/get';
 
 export default function ActionColumnRow({ areaProps: { row } }) {
   return (

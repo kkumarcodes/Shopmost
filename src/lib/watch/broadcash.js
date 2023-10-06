@@ -1,4 +1,4 @@
-const { getRoutes } = require('../../lib/router/Router');
+const { getRoutes } = require('@lib/router/Router');
 
 module.exports.broadcash = function broadcash() {
   const routes = getRoutes();

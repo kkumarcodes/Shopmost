@@ -2,7 +2,7 @@ const Ajv = require('ajv');
 const addFormats = require('ajv-formats');
 const {
   INVALID_PAYLOAD
-} = require('../../../../lib/util/httpStatus');
+} = require('@lib/util/httpStatus');
 const markSkipEscape = require('../../services/markSkipEscape');
 
 // Initialize the ajv instance

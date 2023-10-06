@@ -1,6 +1,6 @@
-const { select } = require('../../../../bin/postgres-query-builder');
-const { pool } = require('../../../../lib/postgres/connection');
-const { getConfig } = require('../../../../lib/util/getConfig');
+const { select } = require('@bin/postgres-query-builder');
+const { pool } = require('@lib/postgres/connection');
+const { getConfig } = require('@lib/util/getConfig');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async function lifetimeSales(

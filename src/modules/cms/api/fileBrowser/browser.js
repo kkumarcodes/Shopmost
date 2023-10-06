@@ -1,11 +1,11 @@
 const { join } = require('path');
 const { existsSync, readdirSync } = require('fs');
-const { CONSTANTS } = require('../../../../lib/helpers');
-const { buildUrl } = require('../../../../lib/router/buildUrl');
+const { CONSTANTS } = require('@lib/helpers');
+const { buildUrl } = require('@lib/router/buildUrl');
 const {
   INVALID_PAYLOAD,
   OK
-} = require('../../../../lib/util/httpStatus');
+} = require('@lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = (request, response, delegate, next) => {

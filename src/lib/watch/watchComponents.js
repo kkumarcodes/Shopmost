@@ -1,14 +1,14 @@
 const chokidar = require('chokidar');
 const { resolve, sep, normalize } = require('path');
-const { CONSTANTS } = require('../../lib/helpers');
-const { Componee } = require('../../lib/componee/Componee');
+const { CONSTANTS } = require('@lib/helpers');
+const { Componee } = require('@lib/componee/Componee');
 const {
   createComponents
-} = require('../../lib/createComponents');
-const { getRoutes } = require('../../lib/router/Router');
+} = require('@lib/createComponents');
+const { getRoutes } = require('@lib/router/Router');
 const {
   isBuildRequired
-} = require('../../lib/webpack/isBuildRequired');
+} = require('@lib/webpack/isBuildRequired');
 
 function watchComponents() {
   chokidar

@@ -1,8 +1,8 @@
 const chokidar = require('chokidar');
 const { resolve } = require('path');
-const { CONSTANTS } = require('../../lib/helpers');
+const { CONSTANTS } = require('@lib/helpers');
 const { existsSync } = require('fs');
-const { getConfig } = require('../../lib/util/getConfig');
+const { getConfig } = require('@lib/util/getConfig');
 
 function watch(calbacks = []) {
   const watcher = chokidar.watch(resolve(CONSTANTS.ROOTPATH, 'extensions/**'), {

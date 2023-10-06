@@ -1,7 +1,7 @@
 const { select, del } = require('../../bin/postgres-query-builder');
 const { loadSubscribers } = require('./loadSubscribers');
 const { callSubscribers } = require('./callSubscibers');
-const { pool } = require('../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 
 const loadEventInterval = 5000;
 const syncEventInterval = 2000;

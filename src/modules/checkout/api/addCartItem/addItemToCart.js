@@ -1,4 +1,4 @@
-const { select } = require('../../../../bin/postgres-query-builder');
+const { select } = require('@bin/postgres-query-builder');
 const { setContextValue } = require('../../../graphql/services/contextHelper');
 const { getCartByUUID } = require('../../services/getCartByUUID');
 const { saveCart } = require('../../services/saveCart');
@@ -6,8 +6,8 @@ const {
   INVALID_PAYLOAD,
   INTERNAL_SERVER_ERROR,
   OK
-} = require('../../../../lib/util/httpStatus');
-const { pool } = require('../../../../lib/postgres/connection');
+} = require('@lib/util/httpStatus');
+const { pool } = require('@lib/postgres/connection');
 
 module.exports = async (request, response, delegate, next) => {
   try {

@@ -1,4 +1,4 @@
-const { pool } = require('../../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 const { select } = require('../../../bin/postgres-query-builder');
 
 module.exports.getTaxRates = async function getTaxRates(

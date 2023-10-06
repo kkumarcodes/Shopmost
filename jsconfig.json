@@ -5,7 +5,7 @@
       "@components/*": [
         "./themes/friday/components/*",
         "./extensions/productComment/components/*",
-        "./packages/shopmost/src/components/*"
+        "./src/components/*"
       ],
       "@components-origin/*": [
         "./packages/shopmost/src/components/*"
@@ -13,8 +13,8 @@
       "@default-theme/cms/*" : [
         "./packages/shopmost/src/modules/cms/pages/*"
       ],
-      "@shopmost/shopmost/*" : [
-        "./packages/shopmost/*"
+      "@lib/*" : [
+        "./src/lib/*"
       ]
     }
   }

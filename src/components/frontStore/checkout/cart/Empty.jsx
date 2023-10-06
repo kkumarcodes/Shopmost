@@ -1,9 +1,9 @@
 import React from 'react';
 import { useAppState } from '@components/common/context/app';
 import Button from '@components/common/form/Button';
-import { _ } from '../../../../lib/locale/translate';
+import { _ } from '@lib/locale/translate';
 
-const { get } = require('../../../../lib/util/get');
+const { get } = require('@lib/util/get');
 
 export function Empty() {
   const items = get(useAppState(), 'cart.items', []);

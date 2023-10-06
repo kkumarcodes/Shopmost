@@ -3,7 +3,7 @@
 import React from 'react';
 import { Select } from '@components/common/form/fields/Select';
 import { useAppDispatch } from '@components/common/context/app';
-import { _ } from '../../../../../lib/locale/translate';
+import { _ } from '@lib/locale/translate';
 
 // TODO: make this list configurable
 const sortingOptions = [

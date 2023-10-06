@@ -1,8 +1,8 @@
 const { existsSync } = require('fs');
 const { resolve } = require('path');
-const { CONSTANTS } = require('../lib/helpers');
-const { getConfig } = require('../lib/util/getConfig');
-const { getCoreModules } = require('../lib/loadModules');
+const { CONSTANTS } = require('@lib/helpers');
+const { getConfig } = require('@lib/util/getConfig');
+const { getCoreModules } = require('@lib/loadModules');
 
 var extensions = [];
 

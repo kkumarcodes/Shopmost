@@ -8,8 +8,8 @@ const {
   update,
   insertOnUpdate,
   del
-} = require('../../../../bin/postgres-query-builder');
-const { get } = require('../../../../lib/util/get');
+} = require('@bin/postgres-query-builder');
+const { get } = require('@lib/util/get');
 
 module.exports = async (request, response, delegate) => {
   const result = await delegate.createProduct;

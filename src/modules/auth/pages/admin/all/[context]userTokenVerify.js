@@ -1,17 +1,17 @@
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
-const { select } = require('../../../../../bin/postgres-query-builder');
+const { select } = require('@bin/postgres-query-builder');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');
 const { getTokenSecret } = require('../../../services/getTokenSecret');
 const { generateToken } = require('../../../services/generateToken');
-const { get } = require('../../../../../lib/util/get');
-const { buildUrl } = require('../../../../../lib/router/buildUrl');
+const { get } = require('@lib/util/get');
+const { buildUrl } = require('@lib/router/buildUrl');
 const {
   getAdminTokenCookieId
 } = require('../../../services/getAdminTokenCookieId');
-const { pool } = require('../../../../../lib/postgres/connection');
+const { pool } = require('@lib/postgres/connection');
 
 module.exports = async (request, response, delegate, next) => {
   const cookieId = getAdminTokenCookieId();
