@@ -17,7 +17,7 @@
 
 ## Introduction
 
-ShopMost is a GraphQL Based and React ecommerce platform with essential commerce features. Built with React, modular and fully customizables.
+ShopMost is a GraphQL Based and Node, React, PostgreSQL ecommerce platform with essential commerce features. Built with React/Node/PostgresSQL, modular and fully customizables.
 
 ## Quick Start
 
