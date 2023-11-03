@@ -30,9 +30,7 @@ export default function Notification() {
   }, []);
 
   return (
-    <div>
-      <ToastContainer hideProgressBar />
-    </div>
+    <ToastContainer hideProgressBar />
   );
 }
 
