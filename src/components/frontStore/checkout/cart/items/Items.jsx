@@ -3,11 +3,11 @@ import React from 'react';
 import { toast } from 'react-toastify';
 import { ItemOptions } from './ItemOptions';
 import { ItemVariantOptions } from './ItemVariantOptions';
-import './Items.scss';
 import { useAppDispatch } from '@components/common/context/app';
 import { _ } from '@lib/locale/translate';
-
-function Items({ items }) {
+import ProductNoThumbnail from '@components/common/ProductNoThumbnail';
+import './Items.scss';
+function Items({ items, setting: { displayCheckoutPriceIncludeTax } }) {
   const AppContextDispatch = useAppDispatch();
 
   const removeItem = async (item) => {
@@ -54,7 +54,7 @@ function Items({ items }) {
             <tr key={index}>
               <td>
                 <div className="flex justify-start space-x-1 product-info">
-                  <div className="flex justify-center">
+                  <div className="product-image flex justify-center items-center">
                     {item.thumbnail && (
                       <img
                         className="self-center"
@@ -63,20 +63,7 @@ function Items({ items }) {
                       />
                     )}
                     {!item.thumbnail && (
-                      <svg
-                        className="self-center"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        />
-                      </svg>
+                      <ProductNoThumbnail width={40} height={40} />
                     )}
                   </div>
                   <div className="cart-tem-info">
@@ -116,14 +103,24 @@ function Items({ items }) {
                 {item.finalPrice.value < item.productPrice.value && (
                   <div>
                     <span className="regular-price">
-                      {item.productPrice.text}
+                      {displayCheckoutPriceIncludeTax
+                        ? item.productPriceInclTax.text
+                        : item.productPrice.text}
                     </span>{' '}
-                    <span className="sale-price">{item.finalPrice.text}</span>
+                    <span className="sale-price">
+                      {displayCheckoutPriceIncludeTax
+                        ? item.finalPriceInclTax.text
+                        : item.finalPrice.text}
+                    </span>
                   </div>
                 )}
                 {item.finalPrice.value >= item.productPrice.value && (
                   <div>
-                    <span className="sale-price">{item.finalPrice.text}</span>
+                    <span className="sale-price">
+                      {displayCheckoutPriceIncludeTax
+                        ? item.finalPriceInclTax.text
+                        : item.finalPrice.text}
+                    </span>
                   </div>
                 )}
                 <div className="md:hidden mt-05">
@@ -135,7 +132,11 @@ function Items({ items }) {
                 <span>{item.qty}</span>
               </td>
               <td className="hidden md:table-cell">
-                <span>{item.total.text}</span>
+                <span>
+                  {displayCheckoutPriceIncludeTax
+                    ? item.total.text
+                    : item.subTotal.text}
+                </span>
               </td>
             </tr>
           ))}
@@ -157,7 +158,15 @@ Items.propTypes = {
         value: PropTypes.number,
         text: PropTypes.string
       }),
+      finalPriceInclTax: PropTypes.shape({
+        value: PropTypes.number,
+        text: PropTypes.string
+      }),
       productPrice: PropTypes.shape({
+        value: PropTypes.number,
+        text: PropTypes.string
+      }),
+      productPriceInclTax: PropTypes.shape({
         value: PropTypes.number,
         text: PropTypes.string
       }),
@@ -166,9 +175,16 @@ Items.propTypes = {
         value: PropTypes.number,
         text: PropTypes.string
       }),
+      subTotal: PropTypes.shape({
+        value: PropTypes.number,
+        text: PropTypes.string
+      }),
       removeApi: PropTypes.string
     })
-  ).isRequired
+  ).isRequired,
+  setting: PropTypes.shape({
+    displayCheckoutPriceIncludeTax: PropTypes.bool
+  }).isRequired
 };
 
 export default Items;
