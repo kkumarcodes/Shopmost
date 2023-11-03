@@ -37,26 +37,6 @@ npm run dev
 - [Theme development](https://kkumarcodes.github.io/Shopmost/#/theme/theme-overview).
 
 
-## Demo
-
-Explore our demo store.
-
-<p align="left">
-  <a href="https://demo.shopmost.io/admin" target="_blank">
-Admin Panel
-  </a>
-</p>
-<b>Demo user:</b>
-
-Email: demo@gmail.com<br/>
-Password: 123456
-
-<p align="left">
-  <a href="https://demo.shopmost.io/" target="_blank">
-Store Front
-  </a>
-</p>
-
 ## Support
 
 If you like my work, feel free to:
