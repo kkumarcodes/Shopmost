@@ -34,7 +34,7 @@ const ProductsQuery = `
 `;
 
 export default function Products({
-  collection: { collectionId, code, addProductApi }
+  collection: { code, addProductApi }
 }) {
   const [name, setName] = React.useState('');
   const [page, setPage] = React.useState(1);
@@ -120,9 +120,11 @@ export default function Products({
             >
               <div className="modal">
                 <AddProducts
-                  collectionId={collectionId}
                   addProductApi={addProductApi}
                   closeModal={closeModal}
+                  addedProductIDs={data.collection.products.items.map(
+                    (p) => p.productId
+                  )}
                 />
               </div>
             </div>
