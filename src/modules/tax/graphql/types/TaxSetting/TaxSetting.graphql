@@ -1,5 +1,4 @@
 extend type Setting {
-  defaultProductTaxClassId: Int
-  defaultShippingTaxClassId: Int
-  baseCalculationAddress: String
+  displayCatalogPriceIncludeTax: Boolean
+  displayCheckoutPriceIncludeTax: Boolean
 }

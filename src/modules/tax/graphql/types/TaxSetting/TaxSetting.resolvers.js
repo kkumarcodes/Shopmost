@@ -1,34 +1,14 @@
+const { getConfig } = require('@lib/util/getConfig');
+
 module.exports = {
   Setting: {
-    defaultProductTaxClassId: (setting) => {
-      const defaultProductTaxClassId = setting.find(
-        (s) => s.name === 'defaultProductTaxClassId'
-      );
-      if (defaultProductTaxClassId && defaultProductTaxClassId.value) {
-        return defaultProductTaxClassId.value;
-      } else {
-        return null;
-      }
-    },
-    defaultShippingTaxClassId: (setting) => {
-      const defaultShippingTaxClassId = setting.find(
-        (s) => s.name === 'defaultShippingTaxClassId'
-      );
-      if (defaultShippingTaxClassId && defaultShippingTaxClassId.value) {
-        return defaultShippingTaxClassId.value;
-      } else {
-        return null;
-      }
-    },
-    baseCalculationAddress: (setting) => {
-      const baseCalculationAddress = setting.find(
-        (s) => s.name === 'baseCalculationAddress'
-      );
-      if (baseCalculationAddress && baseCalculationAddress.value) {
-        return baseCalculationAddress.value;
-      } else {
-        return null;
-      }
-    }
+    displayCatalogPriceIncludeTax: () => getConfig(
+        'pricing.tax.display_catalog_price_including_tax',
+        false
+      ),
+    displayCheckoutPriceIncludeTax: () => getConfig(
+        'pricing.tax.display_checkout_price_including_tax',
+        false
+      )
   }
 };
