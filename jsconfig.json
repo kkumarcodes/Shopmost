@@ -15,6 +15,9 @@
       ],
       "@lib/*" : [
         "./src/lib/*"
+      ],
+      "@modules/*" : [
+        "./src/modules/*"
       ]
     }
   }
